@@ -179,8 +179,55 @@ NB: This is the responsive stylesheet of this theme.
         margin-bottom: 20px;
     }
     
+    /* Centrer le contenu texte sur mobile */
+    .video-text-content {
+        text-align: center;
+    }
+    
     .video-text-content h2 {
         font-size: 32px;
+    }
+
+    /* CTA vidéo : inverser l'ordre sur mobile (CTA sous la vidéo) */
+    .video-cta-btn-desktop {
+        display: none;
+    }
+
+    .video-cta-btn-mobile {
+        display: block;
+        margin: 25px auto 0;
+        text-align: center;
+        max-width: 260px; /* moins large sur mobile */
+        width: 80%;
+    }
+
+    /* Accomplishments : overlay toujours visible sur mobile
+       avec titre en haut à gauche de l'image */
+    .accomplishments-grid .project-card .overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.35);
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .accomplishments-grid .project-card .overlay .overlay-inner {
+        text-align: left;
+        padding: 10px 14px;
+    }
+
+    .accomplishments-grid .project-card .overlay .overlay-inner h4 {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    /* Optionnel : on masque le sous-texte pour garder un visuel épuré */
+    .accomplishments-grid .project-card .overlay .overlay-inner p {
+        display: none;
     }
 
     .about-text-left {

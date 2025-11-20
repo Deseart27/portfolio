@@ -800,6 +800,15 @@ canvas{
     border-radius: 8px;
 }
 
+/* Variantes CTA vidéo desktop / mobile */
+.video-cta-btn-desktop {
+    display: inline-block;
+}
+
+.video-cta-btn-mobile {
+    display: none;
+}
+
 .video-cta-btn br {
     line-height: 0.3;
 }
@@ -921,7 +930,8 @@ canvas{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.3);
+    /* Overlay un peu plus léger pour moins assombrir la vidéo */
+    background: rgba(0, 0, 0, 0.15);
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 20px;
@@ -932,7 +942,7 @@ canvas{
 }
 
 .video-overlay:hover {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.25);
 }
 
 .video-overlay.hidden {
