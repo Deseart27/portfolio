@@ -736,6 +736,7 @@ canvas{
 /* White subtitle for Accomplissements Product section */
 #portfolio .section-subtitle {
     color: #ffffff;
+    padding: 0 15px; /* léger padding horizontal pour aérer le texte */
 }
 
 /* Vertical dotted gradient for Experiences: more opaque dots en bas, plus légers en haut */
