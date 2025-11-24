@@ -274,6 +274,38 @@ img {
     margin-top: 15px;
 }
 
+/* Lang switch ENG / FR dans le menu */
+.lang-switch {
+    margin-left: 8px;
+}
+
+/* Lien de langue : petit “pill” comme dans l’ancienne version */
+.navbar-nav > li.lang-switch > a {
+    display: inline-block;
+    padding: 4px 6px;
+    border-radius: 30%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.lang-switch a {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.lang-switch a:hover {
+    opacity: 1;
+    color: var(--main_color);
+    text-decoration: none;
+    background-color: rgba(211, 150, 58, 0.25);
+}
+
+.lang-switch .active-lang {
+    opacity: 1;
+    background-color: rgba(211, 150, 58, 0.2);
+}
+
 .sticky_navigation{
     -webkit-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out ;

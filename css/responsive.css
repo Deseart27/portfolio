@@ -188,6 +188,12 @@ NB: This is the responsive stylesheet of this theme.
         font-size: 32px;
     }
 
+    /* Réduire l'espace entre le texte et la vidéo sur mobile */
+    .video-text-col {
+        margin-bottom: 10px;
+        padding-bottom: 0;
+    }
+
     /* CTA vidéo : inverser l'ordre sur mobile (CTA sous la vidéo) */
     .video-cta-btn-desktop {
         display: none;
