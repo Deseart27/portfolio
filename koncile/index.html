@@ -1,0 +1,2153 @@
+<!DOCTYPE html>
+<!--
+    NOTE: Ceci est un vieux template HTML qui trainait.
+    Ne jugez pas mes compétences techniques dessus !
+    Pour voir mes vraies compétences tech, allez sur www.ajunto.fr
+-->
+<html lang="en">
+<head>
+    <!--meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="François Lejeune - Application for Koncile (ex-first PM at lemlist, B2B SaaS & AI Product Manager).">
+    <meta name="keywords" content="mourithemes, onepage, developer, resume, cv, personal, portfolio, personal resume, clean, modern">
+    <meta name="author" content="MouriTheme">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Template name-->
+    <title>François Lejeune - Koncile application</title>
+
+    <!--Favicon – desktop + mobile uniquement-->
+    <!-- Icône principale (SVG moderne) -->
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg?v=2">
+    <!-- Fallback PNG pour navigateurs qui ne gèrent pas le SVG -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png?v=2">
+    <!-- Icône pour iOS / Android (raccourci sur l’écran d’accueil) -->
+    <link rel="apple-touch-icon" href="../favicon/apple-touch-icon.png?v=2">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!--Animated headline css-->
+    <link rel="stylesheet" href="../css/jquery.animatedheadline.css">
+
+    <!--Owl carousel css-->
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.css">
+
+    <!--Magnific popup css-->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <!--line icon css-->
+    <link rel="stylesheet" href="../css/line-icons.min.css">
+
+    <!--Theme css-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--Responsive css-->
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <!-- Koncile-specific styles -->
+    <style>
+      /* Override main accent color to Koncile yellow only on Koncile page */
+      body.koncile-page {
+        --main_color: #FDF769;
+        --second_color: #FDF769;
+      }
+
+      /* Softer, more rounded CTAs on Koncile page */
+      body.koncile-page .btn-a,
+      body.koncile-page .video-cta-btn,
+      body.koncile-page .pricing-cta-btn {
+        border-radius: 999px;
+        padding-left: 28px;
+        padding-right: 28px;
+      }
+
+      /* Koncile team highlighted with yellow marker effect */
+      .koncile-hand {
+        position: relative;
+        z-index: 1;
+        font-family: inherit;
+        font-weight: inherit;
+        letter-spacing: normal;
+        font-size: 1em;
+        padding: 0 4px;
+        background-image: linear-gradient(#FDF769 0, #FDF769 4px, rgba(253,247,105,0.5) 4px, rgba(253,247,105,0.5) 100%);
+      }
+
+      /* Black title & subtitle for Product accomplishments section */
+      #portfolio .section-title h2,
+      #portfolio .section-title .section-subtitle {
+        color: #ffffff;
+      }
+
+      /* Koncile-specific background for projects section */
+      body.koncile-page #portfolio {
+        background-image: url('../images/various/bgblack-concile.avif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* Project cards: rounded with clear white border on Koncile page */
+      body.koncile-page #portfolio .project-card {
+        border-radius: 24px !important;
+        border: 1px solid #ffffff !important;
+        box-shadow: none !important;
+        padding: 4px;
+        background: transparent;
+      }
+
+      body.koncile-page #portfolio .project-item {
+        border-radius: 20px !important;
+        overflow: hidden;
+      }
+
+      /* Black title for Experience; testimonial title overridden below for Koncile */
+      #resume .section-title h2 {
+        color: #000000;
+      }
+
+      /* Koncile-specific pricing-style card (actually value prop) */
+      body.koncile-page .pricing-card {
+        border: 0.8px solid #000000;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 32px;
+      }
+
+      /* Ensure hero text is black on Koncile page */
+      body.koncile-page .welcome-text h1,
+      body.koncile-page .welcome-text .mobile-subtitle,
+      body.koncile-page .welcome-text p {
+        color: #000000;
+      }
+
+      /* Navigation styling on Koncile page: black text, underline only on hover */
+      body.koncile-page .nav li a {
+        color: #000000 !important;
+        text-decoration: none;
+      }
+
+      body.koncile-page .nav li a:hover {
+        color: #000000 !important;
+        text-decoration: underline;
+      }
+
+      body.koncile-page .lang-switch a {
+        color: #000000 !important;
+        background-color: transparent;
+        opacity: 0.7;
+      }
+
+      body.koncile-page .lang-switch a:hover,
+      body.koncile-page .lang-switch .active-lang {
+        opacity: 1;
+        background-color: transparent;
+        text-decoration: underline;
+        color: #000000 !important;
+      }
+
+      body.koncile-page .pricing-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 24px;
+      }
+
+      body.koncile-page .pricing-icon {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+
+      body.koncile-page .pricing-header h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+        color: #000000;
+      }
+
+      body.koncile-page .pricing-badge {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        padding: 6px 16px;
+        border-radius: 999px;
+        background: #ececec;
+        color: #111111;
+        font-size: 12px;
+        font-weight: 400; /* lighter */
+        letter-spacing: 0.03em;
+        text-transform: lowercase;
+      }
+
+      body.koncile-page .pricing-cta-btn {
+        background: #000000;
+        border-color: #000000;
+        color: #000000;
+        width: 100%;
+        padding: 10px 24px;
+        font-size: 15px;
+        font-weight: 400;
+      }
+
+      /* CTA text slightly smaller + hover inversion (outline style) */
+      body.koncile-page .video-cta-btn,
+      body.koncile-page .pricing-cta-btn {
+        font-size: 15px;
+        font-weight: 400;
+      }
+
+      body.koncile-page .video-cta-btn:hover,
+      body.koncile-page .pricing-cta-btn:hover {
+        background: transparent;
+        color: #000000;
+        border-color: #000000;
+      }
+      /* Make Book a demo CTA text black on Koncile page */
+      body.koncile-page .video-cta-btn {
+        color: #000000;
+      }
+      /* Custom banner background for Koncile page: light white grid similar to Koncile's site */
+      .koncile-banner {
+        background-color: #ffffff;
+        background-image:
+          linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+        background-size: 60px 60px;
+        background-position: 0 0;
+      }
+
+      /* Remove global dark overlay on hero for Koncile page */
+      .koncile-banner::before {
+        background: transparent !important;
+      }
+
+      /* Mobile-specific layout tweaks for Koncile page */
+      @media (max-width: 767px) {
+        .koncile-banner {
+          background-color: #ffffff;
+          background-image:
+            linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+          background-size: 40px 40px;
+          background-position: 0 0;
+        }
+
+        /* Left-aligned text blocks on mobile */
+        body.koncile-page .video-text-content,
+        body.koncile-page #portfolio .section-title,
+        body.koncile-page #pricing .section-title,
+        body.koncile-page #resume .section-title,
+        body.koncile-page #testimonial .section-title {
+          text-align: left;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        /* Left-align the blurred price line on mobile */
+        body.koncile-page #pricing .pricing-salary {
+          text-align: left;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        /* Smaller pricing title to avoid overlap with badge */
+        body.koncile-page .pricing-header h3 {
+          font-size: 16px;
+          margin-right: 100px;
+        }
+      }
+
+      /* Ensure all pricing text is black on folk page */
+      body.koncile-page #pricing,
+      body.koncile-page #pricing p,
+      body.koncile-page #pricing li,
+      body.koncile-page #pricing h3,
+      body.koncile-page #pricing h4,
+      body.koncile-page #pricing .pricing-salary-amount,
+      body.koncile-page #pricing .pricing-salary-unit,
+      body.koncile-page #pricing .pricing-salary-link {
+        color: #000000;
+      }
+
+      /* Slight hierarchy tweaks: bigger price, smaller "Included" */
+      body.koncile-page .pricing-salary-amount,
+      body.koncile-page .pricing-salary-unit {
+        font-size: 24px;
+      }
+
+      body.koncile-page .pricing-salary-prefix {
+        font-size: 24px;
+        margin-right: 4px;
+      }
+
+      body.folk-page .pricing-features {
+        margin-top: 18px; /* padding above "Included" */
+      }
+
+      body.koncile-page .pricing-features h4 {
+        font-size: 15px;
+        font-weight: 600; /* more bold for "Included" */
+        margin-bottom: 10px;
+      }
+
+      body.koncile-page .pricing-features ul li {
+        font-size: 14px;
+        font-weight: 400; /* lighter items */
+        line-height: 1.5;
+      }
+
+      /* Override dotted backgrounds: keep same layout & opacity, only change base color to black */
+      #about,
+      #resume,
+      #pricing {
+        background-image:
+          linear-gradient(135deg,
+            rgba(255,255,255,1) 0%,
+            rgba(255,255,255,0.9) 40%,
+            rgba(255,255,255,0.5) 65%,
+            rgba(255,255,255,0) 90%),
+          radial-gradient(circle, rgba(0, 0, 0, 0.22) 2px, transparent 2px);
+      }
+
+      /* Thin separator line under the video/about section */
+      body.koncile-page #about {
+        border-top: none;
+        border-bottom: none;
+      }
+
+      /* Thin black line above Experience and below Testimonials to avoid double borders */
+      body.koncile-page #resume {
+        border-top: 1px solid #000000;
+      }
+
+      body.koncile-page #testimonial {
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+      }
+
+      /* Folk-specific background image for Projects and Testimonials sections */
+      #portfolio,
+      #testimonial {
+        background-image: url('../images/various/folkbg2.png');
+        background-size: cover;
+        background-position: center;
+        background-color: transparent;
+      }
+
+      /* Remove dark overlay on these sections only */
+      #portfolio.skills-area::before,
+      #testimonial.testimonial-area::before {
+        background: transparent;
+      }
+
+      /* Experience items framed for folk page */
+      #resume .resume-item.expr {
+        border: 1px solid #000000;
+        border-radius: 0;
+        padding: 25px;
+        margin-bottom: 25px;
+        background: rgba(255,255,255,0.9);
+      }
+
+      /* Project cards framed for folk page (no radius, black border) */
+      body.koncile-page #portfolio .project-card,
+      body.koncile-page #portfolio .project-item {
+        border: 0.5px solid #000000;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      /* Testimonials framed for folk page (no radius, black border) */
+      body.koncile-page #testimonial .single-testimonial {
+        border: 1px solid #000000;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      /* Video frame for folk page: no radius, black border */
+      body.koncile-page .video-wrapper,
+      body.koncile-page .video-player {
+        border-radius: 0;
+        border: 1px solid #000000;
+        box-shadow: none;
+        transform: none;
+      }
+
+      /* Experience cards on Koncile page: light grey background, rounded, no border */
+      body.koncile-page #resume .resume-item.expr {
+        border: none;
+        border-radius: 20px;
+        padding: 25px;
+        margin-bottom: 25px;
+        background: #f5f5f5;
+      }
+
+      /* Video frame on Koncile page: light border radius + light grey border */
+      body.koncile-page .video-wrapper,
+      body.koncile-page .video-player {
+        border-radius: 12px;
+        border: 1px solid #e0e0e0;
+        box-shadow: none;
+        transform: none;
+      }
+
+      /* Pricing section background */
+      body.koncile-page #pricing {
+        background-color: #F2F2F2;
+        background-image: none;
+      }
+
+      /* "Try François" app-like mock */
+      .koncile-try-app {
+        position: relative;
+        border-radius: 24px;
+        overflow: hidden;
+      }
+
+      .koncile-try-image {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 24px;
+        overflow: hidden;
+      }
+
+      .koncile-try-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .koncile-try-avatar-card {
+        position: absolute;
+        left: 32px;
+        bottom: 32px;
+        width: 96px;
+        height: 96px;
+        border-radius: 18px;
+        overflow: hidden;
+        border: 1px solid #f0f0f0;
+        background: #fafafa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+      }
+
+      .koncile-try-avatar-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .koncile-try-tooltip {
+        position: absolute;
+        left: 205px;
+        bottom: 253px;
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 999px;
+        background: #FDF769;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      }
+
+      .koncile-try-tooltip:hover {
+        text-decoration: underline;
+      }
+
+      /* Tooltip tail + sonar circle */
+      .koncile-try-tooltip::before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: 28px;
+        border-width: 0 8px 8px 8px;
+        border-style: solid;
+        border-color: transparent transparent #FDF769 transparent;
+      }
+
+      .koncile-try-tooltip::after {
+        content: '';
+        position: absolute;
+        top: -32px;
+        left: 36px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 2px solid #FDF769;
+        box-shadow: 0 0 0 4px rgba(253,247,105,0.45);
+        background: transparent;
+      }
+
+      @media (max-width: 767px) {
+        .koncile-try-app {
+          padding: 16px;
+        }
+
+        .koncile-try-avatar-card {
+          left: 16px;
+          bottom: 24px;
+          width: 80px;
+          height: 80px;
+        }
+
+        .koncile-try-tooltip {
+          left: 160px;
+          bottom: 60px;
+          font-size: 13px;
+        }
+      }
+
+      /* Use Clash Grotesk (if available) for titles */
+      body.koncile-page h1,
+      body.koncile-page h2,
+      body.koncile-page h3,
+      body.koncile-page .section-title h2,
+      body.koncile-page .pricing-header h3 {
+        font-family: "Clash Grotesk", "Clashgrotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      /* Testimonials cards: rounded with white border like projects */
+      body.koncile-page #testimonial .single-testimonial {
+        border-radius: 24px;
+        border: 1px solid #ffffff;
+        box-shadow: none;
+      }
+
+      /* Testimonial section: same dark background as projects, title in white */
+      body.koncile-page #testimonial {
+        background-image: url('../images/various/bgblack-concile.avif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      body.koncile-page #testimonial .section-title h2 {
+        color: #ffffff;
+      }
+
+      /* Company names in experience section in black */
+      body.koncile-page #resume .resume-item.expr h4 {
+        color: #000000;
+      }
+
+      /* Project tags: grey background with black text on Koncile page */
+      body.koncile-page .project-tag {
+        background-color: #e0e0e0;
+        color: #000000;
+        border-radius: 999px;
+      }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V76ZXWF3JG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-V76ZXWF3JG');
+    </script>
+</head>
+<body class="koncile-page">
+
+<!--Preloader starts-->
+
+<div class="loader_bg"><div class="loader"></div></div>
+
+<!--Preloader ends-->
+
+<!--Navigation area starts-->
+
+<header class="nav-area navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+            <!--main menu starts-->
+
+            <div class="col-md-12">
+                <div class="main-menu">
+                    <div class="navbar navbar-cus">
+                        <div class="navbar-header">
+                            <a href="../index-en.html" class="navbar-brand"><span class="logo">&#128640;<span></span></span></a> <!--change logo name-->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse">
+                            <nav>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a class="smooth-menu" href="#home">Home</a></li>
+                                    <li><a class="smooth-menu" href="#about">About</a></li>
+                                    <li><a class="smooth-menu" href="#portfolio">Projects</a></li>
+                                    <li><a class="smooth-menu" href="#resume">Experience</a></li>
+                                    <li><a class="smooth-menu" href="#pricing">Try</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--main menu ends-->
+        </div>
+    </div>
+</header>
+
+<!--Navigation area ends-->
+
+<!--Banner area starts-->
+
+<div class="banner-area koncile-banner" id="home">
+    <!--<div id="particles-js"></div>-->
+    <div class="banner-table">
+        <div class="banner-table-cell">
+            <div class="welcome-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <section class="intro animate-scale">
+
+                                <div class="img-area">
+                                    <img src="../images/home/1.png" alt="Portrait"> <!--edit image-->
+                                </div>
+
+                                <h1>Welcome, <span class="koncile-hand">Koncile team</span>!</h1>
+
+                                <h1 class="ah-headline">
+
+                                    <span class="ah-words-wrapper">
+                                        <b class="is-visible">Ex-first PM hire at lemlist</b>
+                                        <b>Experience turning raw data into useful sales intelligence</b>
+                                        <b>Founder of Ajunto, a secure B2B SaaS for law firms</b>
+                                        <b>B2B Product Manager at the intersection of sales, ops & AI</b>
+                                        <b>Ready to help Koncile scale from experiments to repeatable value</b>
+                                    </span>
+                                </h1>
+                                
+                                <h1 class="mobile-subtitle">Sales tech & B2B SaaS Product Manager</h1>
+
+                                <div class="social-icon">
+                                    <ul>
+                                        <li><a href="https://www.linkedin.com/in/fran%C3%A7ois-lejeune-9b5529aa/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://github.com/Deseart27" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
+                                        
+                                    </ul>
+                                </div>
+
+
+                            </section>
+
+                            <div class="clearfix"></div>
+
+                            <a class="mouse-scroll hidden-xs dadada" href="#about">
+                                <span class="mouse">
+                                    <span class="mouse-movement"></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Banner area ends-->
+
+<!--About area starts-->
+
+<!-- Version cachée (originale) -->
+<div class="about-area section-padding" id="about-hidden" style="display: none;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="stack">
+                    <img src="../images/about/a1.jpg" alt="about image"> <!--edit image-->
+                </div>
+            </div>
+            <div class="col-md-7 col-md-offset-1 col-sm-12">
+                <div class="about-right">
+                    <h2>Who am I?</h2>
+                    <p>After entering the tech world as a Sales, I quickly became <b>passionate about Product</b>. Highly <b>motivated</b> to join an ambitious startup as a PM, I decided to <b>strengthen my business skills while training myself in tech and product management methods</b> in my spare time.</p>
+                    <p>&#128640; <b>Today I’m looking for a Product Manager role where I can learn fast, push myself, and help build the best possible product.</b></p>
+                    <br>
+
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="about-list">
+                                <li> <span class="title">Name</span> <span class="value">François Lejeune</span> </li>
+                                <li> <span class="title">Age</span> <span class="value">25</span> </li>
+                                <li> <span class="title">Email</span> <span class="value">francois.lejeune27@gmail.com</span> </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="about-list">
+                                <li> <span class="title">Phone</span> <span class="value">+33 6 65 01 89 23</span> </li>
+                                <li> <span class="title">Hobbies</span> <span class="value">Cooking, dev, piano & guitar</span> </li>
+                                <li> <span class="title">Availability</span> <span class="value">01/06/2022</span> </li>
+                                <br>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <a href="#skills-bd" class="skill-btn btn-a">My skills</a>
+                    <a href="../images/about/engCV-Flejeune.pdf" class="down-btn btn-a" download>My resume</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Version affichée avec vidéo -->
+<div class="about-area section-padding" id="about">
+    <div class="container">
+        <div class="row video-row">
+            <div class="col-sm-12 video-text-col">
+                <div class="video-text-content">
+                    <h2>120 seconds to get to know me.</h2>
+                    <p>I know your time is precious, so here’s my background condensed into a two‑minute video.</p>
+                    <p>This dedicated version of my portfolio is tailored to my application at Koncile, focusing on how my B2B SaaS experience can fit with the founder role you are looking for .</p>
+                    <!-- Main CTA (desktop & tablet) -->
+                    <a href="https://calendly.com/lejeune-francois/recrutement" target="_blank" rel="noopener noreferrer" class="btn-a video-cta-btn video-cta-btn-desktop">Book a demo<br><span class="btn-subtitle">(meet me)</span></a>
+                </div>
+            </div>
+            <div class="col-sm-12 video-col">
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <video id="about-video" class="video-player" poster="../images/various/thumbnailvideo.png" preload="metadata" playsinline webkit-playsinline>
+                            <source src="https://mkt-content.s3.fr-par.scw.cloud/compress%20video%20portfolio%201.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                        <div class="video-overlay" id="video-overlay">
+                            <button class="play-button" id="play-video-btn" type="button">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="40" cy="40" r="40" fill="white" fill-opacity="0.85"/>
+                                    <path d="M32 24L32 56L56 40L32 24Z" fill="#4285F4"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <script>
+                        (function() {
+                            var video = document.getElementById('about-video');
+                            var playBtn = document.getElementById('play-video-btn');
+                            var overlay = document.getElementById('video-overlay');
+                            var wrapper = document.querySelector('.video-wrapper');
+                            
+                            function playVideo() {
+                                if (overlay) overlay.style.display = 'none';
+                                if (video) {
+                                    video.setAttribute('controls', 'controls');
+                                    video.play().catch(function(err) {
+                                        console.error('Play error:', err);
+                                    });
+                                }
+                                if (wrapper) wrapper.classList.add('playing');
+                            }
+                            
+                            if (playBtn) {
+                                playBtn.onclick = function(e) {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    playVideo();
+                                    return false;
+                                };
+                            }
+                            
+                            if (overlay) {
+                                overlay.onclick = function(e) {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    playVideo();
+                                    return false;
+                                };
+                            }
+                            
+                            if (video) {
+                                video.onpause = function() {
+                                    if (!video.ended && video.currentTime > 0 && overlay) {
+                                        overlay.style.display = 'flex';
+                                    }
+                                };
+                                video.onended = function() {
+                                    if (overlay) overlay.style.display = 'flex';
+                                    video.removeAttribute('controls');
+                                };
+                            }
+                        })();
+                        </script>
+                    </div>
+                </div>
+                <!-- Mobile‑specific CTA (placed under the video) -->
+                <a href="https://calendly.com/lejeune-francois/recrutement" target="_blank" rel="noopener noreferrer" class="btn-a video-cta-btn video-cta-btn-mobile">Book a demo<br><span class="btn-subtitle">(meet me)</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--About area ends -->
+
+<!--Skills area starts (hidden)-->
+
+<div id="skills-bd" class="skills-area section-padding" style="display: none;">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>My <span>skills</span></h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="about-text-right">
+
+          <div id="skills">
+
+            <div class="row">
+
+              <div class="col-md-6">
+                <div class="col-md-12">
+
+                  <!-- skillbar -->
+                  <div class="skillbar" data-percent="80%">
+                    <!--edit percentage-->
+
+                    <h6 class="skillbar-title">Business</h6>
+                    <p class="skillbar-detail">Négociation grands comptes, démonstrations techniques, leadgen...</p>
+                    <!--edit skills-->
+                    <h6 class="skillbar-percent"></h6>
+                    <!--edit percentage-->
+
+                    <div class="skillbar-bar">
+                      <div class="skillbar-child"></div>
+                    </div>
+
+                  </div>
+                  <!-- end skillbar -->
+
+                </div>
+
+
+                <div class="col-md-12">
+
+                  <!-- skillbar -->
+                  <div class="skillbar" data-percent="65%">
+                    <!--edit percentage-->
+
+                    <h6 class="skillbar-title">Product management (junior)</h6>
+                    <p class="skillbar-detail">Méthodes agiles, Analytics, bases en UX Design, méthodique </p>
+                    <!--edit skills-->
+                    <h6 class="skillbar-percent"></h6>
+                    <!--edit percentage-->
+
+                    <div class="skillbar-bar">
+                      <div class="skillbar-child"></div>
+                    </div>
+
+                  </div>
+                  <!-- end skillbar -->
+
+                </div>
+
+                <div class="col-md-12">
+
+                  <!-- skillbar -->
+                  <div class="skillbar" data-percent="70%">
+                    <!--edit percentage-->
+
+                    <h6 class="skillbar-title">No-code</h6>
+                    <p class="skillbar-detail">Zapier, Make (former Integromat), Notion, automatisations Pipedrive </p>
+                    <!--edit skills-->
+                    <h6 class="skillbar-percent"></h6>
+                    <!--edit percentage-->
+
+                    <div class="skillbar-bar">
+                      <div class="skillbar-child"></div>
+                    </div>
+
+                  </div>
+                  <!-- end skillbar -->
+
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="col-md-12">
+
+                  <!-- skillbar -->
+                  <div class="skillbar" data-percent="85%">
+                    <!--edit percentage-->
+
+                    <h6 class="skillbar-title">Stratégie commerciale</h6>
+                    <p class="skillbar-detail">Architecture CRM, optimisation funnel, leadgen...</p>
+                    <!--edit skills-->
+                    <h6 class="skillbar-percent"></h6>
+                    <!--edit percentage-->
+
+                    <div class="skillbar-bar">
+                      <div class="skillbar-child"></div>
+                    </div>
+
+                  </div>
+                  <!-- end skillbar -->
+
+                </div>
+
+
+                <div class="col-md-12">
+
+                  <!-- skillbar -->
+                  <div class="skillbar" data-percent="55%">
+                    <!--edit percentage-->
+
+                    <h6 class="skillbar-title">Data engineering</h6>
+                    <p class="skillbar-detail">Déploiement de divers projets (scrappers, APIs & interfaces web)</p>
+                    <!--edit skills-->
+                    <h6 class="skillbar-percent"></h6>
+                    <!--edit percentage-->
+
+                    <div class="skillbar-bar">
+                      <div class="skillbar-child"></div>
+                    </div>
+
+                  </div>
+                  <!-- end skillbar -->
+
+                </div>
+
+
+                <div class="col-md-12">
+
+                  <!-- skillbar -->
+                  <div class="skillbar" data-percent="66%">
+                    <!--edit percentage-->
+
+                    <h6 class="skillbar-title">Programmation</h6>
+                    <p class="skillbar-detail">Python, développement web (intermédiaire), débutant SQL
+                    </p>
+                    <!--edit skills-->
+                    <h6 class="skillbar-percent"></h6>
+                    <!--edit percentage-->
+
+                    <div class="skillbar-bar">
+                      <div class="skillbar-child"></div>
+                    </div>
+
+                  </div>
+                  <!-- end skillbar -->
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+  </div>
+      <div class="row">
+        <div class="section-title">
+            <div class="post-skillbar-next">
+              <br>
+              <h2>Ma <span>TO-DO list</span> tech 2022 :</h2>
+              <br>
+              <li>  (vraiment) Apprendre le développement Web (HTML+ & Css+, JS)</li>
+              <li>  Acquérir ces PM skills : UI/UX design+, Kibana, maitrise des méthodes Agiles</li>
+              <li>  <b>Side-project</b> : Déployer une solution de veille jurisprudentielle automatisée</li>
+
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!--Skills area ends-->
+
+<!--Skills area starts (for portfolio)-->
+
+<div id="portfolio" class="skills-area section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+         <h2>Product accomplishments</h2>
+         <p class="section-subtitle">A selection of projects I’ve worked on over the past few years.</p>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+    <div class="row accomplishments-grid">
+      <!-- Row 1 (Project 7 : Ajunto) -->
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <div class="project-item">
+            <a href="#" data-toggle="modal" data-target="#project7Modal">
+              <img src="../images/projectspage/ajuntoG/1.png" alt="Ajunto V1 launch">
+              <div class="overlay">
+                <div class="overlay-inner">
+                  <h4>Ajunto V1 launch</h4>
+                  <p>Ajunto</p>
+                </div>
+              </div>
+            </a>
+            <div class="project-tags">
+              <span class="project-tag">Product</span>
+              <span class="project-tag">Tech</span>
+              <span class="project-tag">Design</span>
+              <span class="project-tag">GTM</span>
+              <span class="project-tag">Sales Automation</span>
+              <span class="project-tag">Leadership</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <div class="project-item">
+            <a href="#" data-toggle="modal" data-target="#project8Modal">
+              <img src="../images/projectspage/ajuntoDesign/1.png" alt="Ajunto UX & UI design" class="project-image-left">
+              <div class="overlay">
+                <div class="overlay-inner">
+                  <h4>Ajunto UX & UI design</h4>
+                  <p>Ajunto</p>
+                </div>
+              </div>
+            </a>
+            <div class="project-tags">
+              <span class="project-tag">Product</span>
+              <span class="project-tag">UX</span>
+              <span class="project-tag">UI</span>
+              <span class="project-tag">Design System</span>
+              <span class="project-tag">Customer Feedback</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <div class="project-item">
+            <a href="#" data-toggle="modal" data-target="#project9Modal">
+              <img src="../images/projectspage/ajuntoFeature/1.png" alt="Secure case management & sharing (Ajunto)" class="project-image-left">
+              <div class="overlay">
+                <div class="overlay-inner">
+                  <h4>Secure case management & sharing</h4>
+                  <p>Ajunto</p>
+                </div>
+              </div>
+            </a>
+            <div class="project-tags">
+              <span class="project-tag">Product</span>
+              <span class="project-tag">Tech</span>
+              <span class="project-tag">Security</span>
+              <span class="project-tag">Core Feature</span>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Row 2 (former projects 1, 2, 3) -->
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <div class="project-item">
+            <a href="#" data-toggle="modal" data-target="#project1Modal">
+              <img src="../images/projectspage/enrich/2.png" alt="portfolio image" class="project-image-left">
+              <div class="overlay">
+                <div class="overlay-inner">
+                  <h4>Waterfall enrichment algorithm</h4>
+                  <p>lemlist</p>
+      </div>
+    </div>
+            </a>
+            <div class="project-tags">
+              <span class="project-tag">Product</span>
+              <span class="project-tag">Impact Business</span>
+              <span class="project-tag">Feature</span>
+  </div>
+    </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <div class="project-item">
+            <a href="#" data-toggle="modal" data-target="#project2Modal">
+              <img src="../images/projectspage/peopledb/1.png" alt="Leads Database">
+              <div class="overlay">
+                <div class="overlay-inner">
+                  <h4>Leads Database</h4>
+                  <p>lemlist</p>
+                </div>
+              </div>
+            </a>
+            <div class="project-tags">
+              <span class="project-tag">Product</span>
+              <span class="project-tag">Data</span>
+              <span class="project-tag">Analytics</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <div class="project-item">
+            <a href="#" data-toggle="modal" data-target="#project3Modal">
+              <img src="../images/projectspage/chromeextension/1.png" alt="Chrome extension redesign">
+              <div class="overlay">
+                <div class="overlay-inner">
+                  <h4>Chrome extension redesign</h4>
+                  <p>lemlist</p>
+                </div>
+              </div>
+            </a>
+            <div class="project-tags">
+              <span class="project-tag">Product</span>
+              <span class="project-tag">Design</span>
+              <span class="project-tag">UX</span>
+              <span class="project-tag">Tech</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- Row 3 (former projects 4, 5, 6) -->
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <div class="project-item">
+            <a href="#" data-toggle="modal" data-target="#project4Modal">
+              <img src="../images/projectspage/mxp/2.png" alt="Analytics setup" class="project-image-left">
+              <div class="overlay">
+                <div class="overlay-inner">
+                  <h4>Analytics setup</h4>
+                  <p>lemlist</p>
+                </div>
+              </div>
+            </a>
+            <div class="project-tags">
+              <span class="project-tag">Product</span>
+              <span class="project-tag">Data</span>
+              <span class="project-tag">Analytics</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <div class="project-item">
+            <a href="#" data-toggle="modal" data-target="#project5Modal">
+              <img src="../images/projectspage/hubspot/1.png" alt="HubSpot integration & lead-based model redesign">
+              <div class="overlay">
+                <div class="overlay-inner">
+                  <h4>HubSpot integration redesign</h4>
+                  <p>lemlist</p>
+                </div>
+              </div>
+            </a>
+            <div class="project-tags">
+              <span class="project-tag">Product</span>
+              <span class="project-tag">Tech</span>
+              <span class="project-tag">Process</span>
+              <span class="project-tag">Impact Business</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <div class="project-item">
+            <a href="#" data-toggle="modal" data-target="#project6Modal">
+              <img src="../images/projectspage/bettingtable/11.png" alt="Product process: the Betting Table">
+              <div class="overlay">
+                <div class="overlay-inner">
+                  <h4>Product process: the Betting Table</h4>
+                  <p>lemlist</p>
+                </div>
+              </div>
+            </a>
+            <div class="project-tags">
+              <span class="project-tag">Product</span>
+              <span class="project-tag">Process</span>
+              <span class="project-tag">Impact Business</span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Skills area ends (for portfolio)-->
+
+<!--Experience area starts-->
+
+<div id="resume" class="experience-area section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>My <span>Experience</span></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="resumes">
+          <li class="resume-item expr">
+            <img class="resume-company-pic" src="../images/exp/ajunto.jpeg">
+            <h3>Founder</h3>
+            <h4>Ajunto</h4>
+            <h5>Jul 2025 - Present · 5 mos</h5>
+            <p>I designed, built, and launched Ajunto, a SaaS platform that secures document collection and exchange between lawyers and their clients.</p>
+            <a class="toggle-detail" data-toggle="collapse" href="#detail-ajunto" role="button" aria-expanded="false" aria-controls="detail-ajunto">
+              See details <i class="fa fa-chevron-down"></i>
+            </a>
+            <div class="collapse" id="detail-ajunto">
+              <p>The project had a dual purpose: addressing a real operational pain in the legal sector, and sharpening my product, technical, and go‑to‑market skills through an end‑to‑end project.</p>
+              <p>&#10145;&#65039; <b>Product & Design</b>: identified key user problems, designed the UX/UI, and delivered a clean, intuitive interface tailored to small law firms (1–10 people). Implemented an efficient sprint system, ran discovery and (in)validation cycles, and built a knowledge base/FAQ.</p>
+              <p>&#10145;&#65039; <b>Tech</b>: full‑stack development (Next.js, TypeScript, MongoDB, deployed on Vercel), integration of complex services (Stripe, Clerk, SSE‑C encryption via Scaleway), and definition of the project’s security strategy (infrastructure, authentication/access control, log monitoring, Aikido Security setup with OWASP Top 10 focus).</p>
+              <p>&#10145;&#65039; <b>Business / GTM</b>: positioning, landing pages, CRM, and implementation of an automated multi‑channel go‑to‑market strategy.</p>
+              <p>Ajunto is now used by several paying clients and continues to evolve as a side project.</p>
+              <p>This experience significantly strengthened my technical, design, and go‑to‑market capabilities. I leveraged AI thoughtfully to execute faster and more efficiently, gaining a broad understanding of how SaaS products operate and the ability to lead early‑stage product development autonomously and with structure.</p>
+            </div>
+          </li>
+          <li class="resume-item expr">
+            <img class="resume-company-pic" src="../images/exp/lemlist.jpeg">
+            <h3>Product Manager</h3>
+            <h4>lemlist</h4>
+            <h5>Sep 2022 - Apr 2025 · 2 yrs 8 mos</h5>
+            <p>Hired as the second person in the product team, I was part of the company’s journey from $10M to $30M in revenue.</p>
+            <a class="toggle-detail" data-toggle="collapse" href="#detail-lemlist" role="button" aria-expanded="false" aria-controls="detail-lemlist">
+              See details <i class="fa fa-chevron-down"></i>
+            </a>
+            <div class="collapse" id="detail-lemlist">
+              <p>I had the opportunity to lead the design, delivery, and iteration of key features, such as:</p>
+              <p>&#10145;&#65039; A native waterfall enrichment algorithm (email and phone finder), scaling it from $0 to $1M in annual revenue (and profitable!), and from 0 to 20K Monthly Active Users (8 iterations).</p>
+              <p>&#10145;&#65039; A 450M+ leads database, including data providers benchmarking & implementation, growing from 0 to 15K Monthly Active Users (7 iterations).</p>
+              <p>&#10145;&#65039; A complete revamp of our LinkedIn Chrome extension, adding in‑layout features and rethinking the UX, resulting in an increase from 25K to 40K users (2 iterations).</p>
+              <p>&#10145;&#65039; An overhaul of our lead‑object model, migrating all our existing user base to a new model.</p>
+              <p>&#10145;&#65039; A full redesign of the HubSpot integration to align with the complex sales team workflows and support high‑MRR leads’ and clients’ needs.</p>
+              <p>In addition to my PM role, I was also involved in broader strategic and operational initiatives, including:</p>
+              <p>&#10145;&#65039; Co‑designing our Tech x Product process (aka betting table).</p>
+              <p>&#10145;&#65039; The implementation of MixPanel as the main Product Analytics tool for the Product team.</p>
+              <p>&#10145;&#65039; Building from scratch and maintaining strong partnerships with 20+ data providers.</p>
+              <p>&#10145;&#65039; Co‑leading cross‑functional initiatives to improve internal processes, such as Product x Marketing, Product x Support, Product x Sales.</p>
+            </div>
+          </li>
+          <li class="resume-item expr">
+            <img class="resume-company-pic" src="../images/exp/malt.jpeg">
+            <h3>Freelance part time Low/No-code</h3>
+            <h4>Malt</h4>
+            <h5>May 2022 - Nov 2022 · 7 mos</h5>
+            <p>Passionate about low/no‑code, product and tech, I carried out freelance projects alongside my main role.</p>
+            <a class="toggle-detail" data-toggle="collapse" href="#detail-malt" role="button" aria-expanded="false" aria-controls="detail-malt">
+              See details <i class="fa fa-chevron-down"></i>
+            </a>
+            <div class="collapse" id="detail-malt">
+              <p><b>Last project</b>: creation of a custom WordPress plugin dedicated to reporting specific decrees directly on the website of a lawyer.</p>
+              <p>&#10145;&#65039; Creation of a WordPress plugin making recurring calls to the Légifrance API (PHP, HTML & CSS).</p>
+              <p>&#10145;&#65039; Data storage in a WordPress custom table (SQL).</p>
+              <p>&#10145;&#65039; Light redesign of the website via Elementor (no‑code).</p>
+            </div>
+          </li>
+          <li class="resume-item expr">
+            <img class="resume-company-pic" src="../images/exp/lewagon.png">
+            <h3>Bootcamper</h3>
+            <h4>Le Wagon</h4>
+            <h5>Oct. 2021 - Mar. 2022</h5>
+              <p>6‑month intensive data & programming bootcamp.</p>
+            <a class="toggle-detail" data-toggle="collapse" href="#detail-lewagon" role="button" aria-expanded="false" aria-controls="detail-lewagon">
+              See details <i class="fa fa-chevron-down"></i>
+            </a>
+            <div class="collapse" id="detail-lewagon">
+              <p>&#10145;&#65039; Strong focus on data collection, interpretation and exploitation (scraping, APIs, data viz & science, ML & deep learning).</p>
+              <p>&#10145;&#65039; Discovered the ecosystem and constraints of developer / data scientist roles.</p>
+              <p>&#10145;&#65039; Weekly “real world projects” (15h / week).</p>
+      </div>
+          </li>
+          <li class="resume-item expr">
+            <img class="resume-company-pic" src="../images/exp/yanport.png">
+            <h3>Account Executive</h3>
+            <h4>Yanport</h4>
+            <h5>Jan 2021 - Jul 2022 · 1 yr 7 mos</h5>
+            <p>Leader in the real estate data market, Yanport supports professionals on a daily basis thanks to its solutions for all trades in the sector and its unique data warehouse.</p>
+            <a class="toggle-detail" data-toggle="collapse" href="#detail-yanport" role="button" aria-expanded="false" aria-controls="detail-yanport">
+              See details <i class="fa fa-chevron-down"></i>
+            </a>
+            <div class="collapse" id="detail-yanport">
+              <p>Responsible for the "Agent 360" product at the national level (13,000 active users), I participated in the optimization of its marketing, the creation of its dedicated sales center and actively contributed to its development.</p>
+              <p>&#10145;&#65039; Negotiation and large account demonstrations (SaaS and API solutions).</p>
+              <p>&#10145;&#65039; Commercial strategy: implementation of a complete strategy (sourcing, prospecting, demonstrations, automation of tasks, closing & reporting...).</p>
+              <p>&#10145;&#65039; UX and web design: implementation & presentation of a complete product tour solution (via Usetiful).</p>
+              <p>&#10145;&#65039; Web dev & API: implementation of a PDF export tool for users.</p>
+              <p>&#10145;&#65039; Sales funnel optimization and automation (Pipedrive + lemlist + Zoom + Calendly via Zapier).</p>
+              <p>&#10145;&#65039; Discovery: referent of the “Real Estate Agents” target, active participation in Product workshops.</p>
+              <p>&#10145;&#65039; Knowledge management: drafting of multiple process documentations.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--Testimonial Area Starts-->
+
+<div id="testimonial" class="testimonial-area section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>I’ve worked <span>with them</span></h2>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="testimonial-slider owl-carousel">
+          <div class="single-testimonial">
+
+            <div class="testi-comment">
+              <i class="fa fa-quote-left"></i>
+              <p>François is what I’d call “a machine” – not in the cold sense (far from it!), but in the way he executes with speed and focus.
+              <br>I really appreciated his ability to simplify complex concepts and consistently find solutions.</p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-8 col-xs-8">
+                <h2>Ali Rahmani</h2>
+                <!--edit here-->
+                <h3>CEO, Salescraft</h3>
+                <!--edit here-->
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <div class="testi-img">
+                  <img src="../images/testimonial/testi1.png" alt="testimonial image">
+                  <!--edit image here-->
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="single-testimonial">
+
+            <div class="testi-comment">
+              <i class="fa fa-quote-left"></i>
+              <p>Francois was an outstanding element of the data science bootcamp through his personality and technicality.
+              He always showed great resilience and never quit in the face of adversity: if there is a problem to be solved,
+              Francois will solve it.
+              <br>Finally, his pleasant personality would make him a great addition to any team.</p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-8 col-xs-8">
+                <h2>Benjamin Auzanneau</h2>
+                <!--edit here-->
+                <h3>Lead Teacher, Le Wagon</h3>
+                <!--edit here-->
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <div class="testi-img">
+                  <img src="../images/testimonial/testi2.jpg" alt="testimonial image">
+                  <!--edit image here-->
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="single-testimonial">
+
+            <div class="testi-comment">
+              <i class="fa fa-quote-left"></i>
+              <p>François is amazing and extremely reliable.
+                I am constantly astonished by his determination and his ability to positively deal with challenges. 
+                He is hardworking, driven and can accomplish anything he sets his mind to.
+                Working with him on the final project of the Le Wagon Bootcamp was an amazing experience.
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-8 col-xs-8">
+                <h2>Deuza Varela</h2>
+                <!--edit here-->
+                <h3>Product support Analyst, Cazoo</h3>
+                <!--edit here-->
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <div class="testi-img">
+                  <img src="../images/testimonial/testi4.jpg" alt="testimonial image">
+                  <!--edit here-->
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="single-testimonial">
+
+            <div class="testi-comment">
+              <i class="fa fa-quote-left"></i>
+              <p>François is an exceptional Product Manager: fast, efficient and always results‑oriented. Working with him has been a real pleasure, both for his professionalism and his ability to rally teams and move projects forward. A reliable colleague and a real driver in any project.</p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-8 col-xs-8">
+                <h2>Tristan Berguer</h2>
+                <!--edit here-->
+                <h3>Founder @ Senthor</h3>
+                <!--edit here-->
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <div class="testi-img">
+                  <img src="../images/testimonial/tristantesti.jpeg" alt="testimonial image">
+                  <!--edit here-->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--Testimonial Area Ends-->
+
+
+
+
+<!--Contact Area Ends-->
+
+<!--Portfolio area starts (for pricing)-->
+
+<div id="pricing" class="portfolio-area section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>Try François</h2>
+        <p class="section-subtitle">Test what it would feel like to work with me as your right-hand on sales, ops, growth & product.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="koncile-try-app">
+          <div class="koncile-try-image">
+            <img src="../images/various/emptywindows.png" alt="Koncile-like interface mock">
+          </div>
+          <a href="https://calendly.com/lejeune-francois/recrutement" target="_blank" rel="noopener noreferrer" class="koncile-try-tooltip">
+            First, select François Lejeune
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Portfolio area ends (for pricing)-->
+
+<!--Footer Area Starts-->
+
+<div class="footer-area">
+
+</div>
+
+<!--Footer Area Ends-->
+
+
+
+
+
+
+
+
+
+<!--Latest version JQuery-->
+<script src="../js/jquery-3.2.1.min.js"></script>
+
+<!--Bootstrap js-->
+<script src="../js/bootstrap.min.js"></script>
+
+<!--Animated headline js-->
+<script src="../js/jquery.animatedheadline.js"></script>
+
+<!--Magnific popup js-->
+<script src="../js/jquery.magnific-popup.js"></script>
+<script src="../js/custom.js"></script>
+
+<!--Validator js-->
+<script src="../js/jquery.waypoints.js"></script>
+
+<!--Counter up js-->
+<script src="../js/jquery.counterup.min.js"></script>
+
+<!--imagesloaded js-->
+<script src="../js/imagesloaded.min.js"></script>
+
+<!--isotope js-->
+<script src="../js/isotope.pkgd.min.js"></script>
+
+<!--Owl Carousel js-->
+<script src="../js/owl.carousel.js"></script>
+
+<!--Validator js-->
+<script src="../js/validator.js"></script>
+
+<!--Contact js-->
+<script src="../js/contact.js"></script>
+
+<!--particles js-->
+<!--<script src="../js/particles.js"></script>-->
+<script src="../js/app.js"></script>
+
+<!--Main js-->
+<script src="../js/main.js"></script>
+
+<!--Video player js-->
+<script src="../js/video-player.js"></script>
+
+<!-- Project Modal 2 -->
+<div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2ModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="project2ModalLabel">Leads Database</h2>
+        <div class="project-modal-tags">
+          <span class="project-tag">Product</span>
+          <span class="project-tag">Data</span>
+          <span class="project-tag">Analytics</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <!-- Description Section -->
+        <div class="project-section">
+          <h3>Description</h3>
+          <p>Built a massive leads database (600M+ profiles) aggregating multiple data providers. The project required close collaboration with the data team and covered the full product cycle: identifying and negotiating with data vendors, integrating data based on user needs, and creating advanced filters so users could search for very specific profiles. The feature was shipped in 7 iterations with a strong focus on data quality and relevance for users.</p>
+        </div>
+
+        <!-- Screenshots placeholder -->
+        <div class="project-screenshots">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="../images/projectspage/peopledb/1.png" alt="Screenshot People Database" class="project-screenshot">
+            </div>
+            <div class="col-md-6">
+              <img src="../images/projectspage/peopledb/2.png" alt="Screenshot People Database" class="project-screenshot">
+            </div>
+          </div>
+        </div>
+
+        <!-- Impact Section -->
+        <div class="project-section">
+          <h3>Impact / highlights</h3>
+          <div class="impact-metrics">
+            <div class="impact-item">
+              <div class="impact-number">600M+</div>
+              <div class="impact-label">Profiles</div>
+              <p>Database with 600M+ integrated profiles.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">0 → 15K</div>
+              <div class="impact-label">MAU</div>
+              <p>Growth from 0 → 15K MAU in 7 iterations.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Budget</div>
+              <div class="impact-label">Significant</div>
+              <p>Managed significant budgets tied to data providers.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Collab</div>
+              <div class="impact-label">Team & partners</div>
+              <p>Close collaboration with the data team and external partners.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 3 -->
+<div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3ModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="project3ModalLabel">Chrome extension redesign (lemlist)</h2>
+        <div class="project-modal-tags">
+          <span class="project-tag">Product</span>
+          <span class="project-tag">Design</span>
+          <span class="project-tag">UX</span>
+          <span class="project-tag">Tech</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <!-- Description Section -->
+        <div class="project-section">
+          <h3>Description</h3>
+          <p>Full UX/UI redesign of lemlist’s LinkedIn extension. The old extension had many issues: it hovered above the page, closed as soon as you clicked elsewhere and generated a lot of user frustration.</p>
+          <p>The new version is embedded directly into the LinkedIn layout, providing a smooth and intuitive experience to use lemlist from within the platform. This work also paved the way for integrating the extension into the Salesforce layout, increasing reach and product consistency. The project required tight collaboration with the engineering team to integrate the extension properly and guarantee a solid UX.</p>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="project-screenshots">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="../images/projectspage/chromeextension/1.png" alt="Screenshot extension Chrome" class="project-screenshot">
+            </div>
+            <div class="col-md-6">
+              <img src="../images/projectspage/chromeextension/2.png" alt="Screenshot extension Chrome" class="project-screenshot">
+            </div>
+          </div>
+        </div>
+
+        <!-- Impact Section -->
+        <div class="project-section">
+          <h3>Impact / highlights</h3>
+          <div class="impact-metrics">
+            <div class="impact-item">
+              <div class="impact-number">25K → 40K</div>
+              <div class="impact-label">Users</div>
+              <p>Adoption: 25K → 40K users in only 2 iterations.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Feedback</div>
+              <div class="impact-label">User</div>
+              <p>Very positive user feedback with a clear improvement in UX and usage.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Integrations</div>
+              <div class="impact-label">Salesforce</div>
+              <p>Opened the door to new integrations, including a Salesforce layout version.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 4 -->
+<div class="modal fade" id="project4Modal" tabindex="-1" role="dialog" aria-labelledby="project4ModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="project4ModalLabel">Product analytics setup (lemlist)</h2>
+        <div class="project-modal-tags">
+          <span class="project-tag">Product</span>
+          <span class="project-tag">Data</span>
+          <span class="project-tag">Analytics</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <!-- Description Section -->
+        <div class="project-section">
+          <h3>Description</h3>
+          <p>Complete overhaul of lemlist’s analytics stack with Mixpanel, after a dedicated training on the tool. Together with the data team, I implemented a reliable and relevant event tracking setup: removed redundant events, restructured data to improve product insights and controlled analytics‑related spend.</p>
+          <p>This initiative provided clean, actionable product analytics across the whole app, making it easier to take data‑informed decisions and continuously optimise the product.</p>
+          <p>The screenshots below are placeholders; the approach on this project followed one principle: “Overkill is the enemy. The less, the better. Make sure your tracking plan serves a real purpose.”</p>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="project-screenshots">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="../images/projectspage/mxp/1.png" alt="Screenshot Analytics" class="project-screenshot">
+            </div>
+            <div class="col-md-6">
+              <img src="../images/projectspage/mxp/2.png" alt="Screenshot Analytics" class="project-screenshot">
+            </div>
+          </div>
+        </div>
+
+        <!-- Impact Section -->
+        <div class="project-section">
+          <h3>Impact / highlights</h3>
+          <div class="impact-metrics">
+            <div class="impact-item">
+              <div class="impact-number">Tracking</div>
+              <div class="impact-label">Reliable</div>
+              <p>Implemented reliable, useful event tracking aligned with product needs.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Costs</div>
+              <div class="impact-label">Optimised</div>
+              <p>Optimised analytics (Mixpanel) costs and event volume.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Foundation</div>
+              <div class="impact-label">Data‑driven</div>
+              <p>Created a solid base for product analysis and truly data‑driven decisions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 5 -->
+<div class="modal fade" id="project5Modal" tabindex="-1" role="dialog" aria-labelledby="project5ModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="project5ModalLabel">HubSpot integration & “lead‑based” model redesign (lemlist)</h2>
+        <div class="project-modal-tags">
+          <span class="project-tag">Product</span>
+          <span class="project-tag">Tech</span>
+          <span class="project-tag">Process</span>
+          <span class="project-tag">Impact Business</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <!-- Description Section -->
+        <div class="project-section">
+          <h3>Description</h3>
+          <p>Full migration of user data and redesign of the “lead” object model to a contact‑based model at lemlist. This project required a deep understanding of the app’s technical architecture and close collaboration with the most senior engineers.</p>
+          <p>The redesign enabled us to:</p>
+          <ul>
+            <li>Safely migrate all user data (40K MAU)</li>
+            <li>Create a new, scalable HubSpot integration model</li>
+            <li>Unlock SEP use cases and onboard higher‑MRR customers</li>
+          </ul>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="project-screenshots">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="../images/projectspage/hubspot/1.png" alt="Screenshot intégration HubSpot" class="project-screenshot">
+            </div>
+          </div>
+        </div>
+
+        <!-- Impact Section -->
+        <div class="project-section">
+          <h3>Impact / highlights</h3>
+          <div class="impact-metrics">
+            <div class="impact-item">
+              <div class="impact-number">40K</div>
+              <div class="impact-label">Migrated MAU</div>
+              <p>New model adopted across the entire user base (40K MAU).</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Business</div>
+              <div class="impact-label">SEP & MRR</div>
+              <p>Unlocked SEP customers and high‑MRR accounts thanks to the new integration model.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Process</div>
+              <div class="impact-label">Scalability</div>
+              <p>Improved scalability and reduced technical complexity of the historical “lead‑based” model.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 6 -->
+<div class="modal fade" id="project6Modal" tabindex="-1" role="dialog" aria-labelledby="project6ModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="project6ModalLabel">Product process: the Betting Table (lemlist)</h2>
+        <div class="project-modal-tags">
+          <span class="project-tag">Product</span>
+          <span class="project-tag">Process</span>
+          <span class="project-tag">Impact Business</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <!-- Description Section -->
+        <div class="project-section">
+          <h3>Description</h3>
+          <p>Co‑designed and rolled out a new Product x Tech x C‑level process at lemlist to transform how features are shipped — from opportunity identification and prioritisation all the way to go‑to‑market.</p>
+          <p>The project involved tight collaboration with C‑level, Tech, Product, Design, Support and Marketing to redefine a culture of fast shipping, strong ownership and impact. The process simplified the organisation, removed friction created by over‑structuring, strengthened cross‑team communication and accelerated iteration cycles, all backed by concrete product insights.</p>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="project-screenshots">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="../images/projectspage/bettingtable/11.png" alt="Betting Table process" class="project-screenshot">
+            </div>
+            <div class="col-md-6">
+              <img src="../images/projectspage/bettingtable/22.png" alt="Betting Table process" class="project-screenshot">
+            </div>
+          </div>
+        </div>
+
+        <!-- Impact Section -->
+        <div class="project-section">
+          <h3>Impact / highlights</h3>
+          <div class="impact-metrics">
+            <div class="impact-item">
+              <div class="impact-number">Process</div>
+              <div class="impact-label">Adopted</div>
+              <p>New prioritisation and execution process adopted by Product, Design and Tech.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Time-to-ship</div>
+              <div class="impact-label">Faster</div>
+              <p>Accelerated time‑to‑ship and product iteration cycles.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Collab</div>
+              <div class="impact-label">Cross‑teams</div>
+              <p>Improved collaboration across Product, Tech, Sales, Support and Marketing.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Culture</div>
+              <div class="impact-label">Impact</div>
+              <p>More impact‑oriented culture with fast tests and structured feedback, supported by multiple insight sources.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 7 -->
+<div class="modal fade" id="project7Modal" tabindex="-1" role="dialog" aria-labelledby="project7ModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="project7ModalLabel">Ajunto V1 launch (full product ownership)</h2>
+        <div class="project-modal-tags">
+          <span class="project-tag">Product</span>
+          <span class="project-tag">Tech</span>
+          <span class="project-tag">Design</span>
+          <span class="project-tag">GTM</span>
+          <span class="project-tag">Sales Automation</span>
+          <span class="project-tag">Leadership</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <!-- Description Section -->
+        <div class="project-section">
+          <h3>Description</h3>
+          <p>Designed, built and launched the first fully functional version of Ajunto, from initial idea to live product.</p>
+          <p>I owned the entire product cycle: user discovery with lawyers, UX/UI design in Figma, development (Next.js, TypeScript, MongoDB, Vercel), security & encryption, user testing and production rollout.</p>
+          <p>In parallel, I designed and executed the Go‑to‑Market strategy: clarified the value proposition, simplified and reduced the number of landing pages, created targeted marketing content, wrote a full FAQ and set up an automated outbound engine (email + LinkedIn + personalised sequences).</p>
+          <p><a href="https://www.ajunto.fr/" target="_blank" rel="noopener noreferrer" class="project-link">Discover Ajunto <img src="../images/various/openlink.svg" alt="" class="link-icon"></a></p>
+        </div>
+
+        <!-- Screenshot -->
+        <div class="project-screenshots">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="../images/projectspage/ajuntoG/1.png" alt="Interface Ajunto" class="project-screenshot">
+            </div>
+          </div>
+        </div>
+
+        <!-- Impact Section -->
+        <div class="project-section">
+          <h3>Impact / highlights</h3>
+          <div class="impact-metrics">
+            <div class="impact-item">
+              <div class="impact-number">V1</div>
+              <div class="impact-label">Full ownership</div>
+              <p>Launched a fully functional V1 with complete ownership over the product lifecycle.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">€500 ARR</div>
+              <div class="impact-label">From launch</div>
+              <p>First paying customers generating an initial €500 in ARR.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Pipeline</div>
+              <div class="impact-label">Automated</div>
+              <p>Set up and automated the full acquisition pipeline.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">FAQ</div>
+              <div class="impact-label">Strategic</div>
+              <p>Created a strategic FAQ to handle objections and reduce support load.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Outreach</div>
+              <div class="impact-label">Multichannel</div>
+              <p>Implemented an automated multichannel outreach system (email + LinkedIn).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 8 -->
+<div class="modal fade" id="project8Modal" tabindex="-1" role="dialog" aria-labelledby="project8ModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="project8ModalLabel">Ajunto UX & UI design</h2>
+        <div class="project-modal-tags">
+          <span class="project-tag">Product</span>
+          <span class="project-tag">UX</span>
+          <span class="project-tag">UI</span>
+          <span class="project-tag">Design System</span>
+          <span class="project-tag">Customer Feedback</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <!-- Description Section -->
+        <div class="project-section">
+          <h3>Description</h3>
+          <p>Continuous UX work through several design and ergonomics iterations. I worked on navigation architecture, visual consistency, clarity of document upload / management flows and friction reduction for both lawyers and non‑technical end‑clients.</p>
+          <p>High focus on visual quality and simplicity: clean, simple interface, instant understanding, smooth interactions.</p>
+          <p><a href="https://app.ajunto.fr/" target="_blank" rel="noopener noreferrer" class="project-link">Try Ajunto <img src="../images/various/openlink.svg" alt="" class="link-icon"></a></p>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="project-screenshots">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="../images/projectspage/ajuntoDesign/1.png" alt="Design Ajunto" class="project-screenshot">
+            </div>
+            <div class="col-md-6">
+              <img src="../images/projectspage/ajuntoDesign/2.png" alt="Design Ajunto" class="project-screenshot">
+            </div>
+          </div>
+        </div>
+
+        <!-- Impact Section -->
+        <div class="project-section">
+          <h3>Impact / highlights</h3>
+          <div class="impact-metrics">
+            <div class="impact-item">
+              <div class="impact-number">UX</div>
+              <div class="impact-label">Validated</div>
+              <p>UX validated with real‑world tests run with lawyers.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Feedback</div>
+              <div class="impact-label">Clients</div>
+              <p>Early customers describe the app as “simple, intuitive and professional”.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Design</div>
+              <div class="impact-label">Scalable</div>
+              <p>Robust design foundation enabling fast and consistent future iterations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 9 -->
+<div class="modal fade" id="project9Modal" tabindex="-1" role="dialog" aria-labelledby="project9ModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="project9ModalLabel">Secure case management & sharing (Ajunto)</h2>
+        <div class="project-modal-tags">
+          <span class="project-tag">Product</span>
+          <span class="project-tag">Tech</span>
+          <span class="project-tag">Security</span>
+          <span class="project-tag">Core Feature</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <!-- Description Section -->
+        <div class="project-section">
+          <h3>Description</h3>
+          <p>Designed and implemented Ajunto’s core system: secure case management, including document upload / collection, real‑time dashboards, automatic notifications and reminders, and secure file delivery from lawyers to their recipients, compliant with legal and ethical constraints.</p>
+          <p>This system is now the core of Ajunto’s product value and the main sales argument.</p>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="project-screenshots">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="../images/projectspage/ajuntoFeature/1.png" alt="Dossiers Ajunto" class="project-screenshot">
+            </div>
+            <div class="col-md-6">
+              <img src="../images/projectspage/ajuntoFeature/2.png" alt="Dossiers Ajunto" class="project-screenshot">
+            </div>
+          </div>
+        </div>
+
+        <!-- Impact Section -->
+        <div class="project-section">
+          <h3>Impact / highlights</h3>
+          <div class="impact-metrics">
+            <div class="impact-item">
+              <div class="impact-number">Automation</div>
+              <div class="impact-label">Cases</div>
+              <p>Fully automated document exchanges → significant time saved for users.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Compliance</div>
+              <div class="impact-label">Legal</div>
+              <p>Process aligned with confidentiality and non‑repudiation requirements.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Foundation</div>
+              <div class="impact-label">Billing</div>
+              <p>Technical foundation that supports future upsell and advanced plans.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 1 -->
+<div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="project1ModalLabel">Waterfall enrichment algorithm (lemlist)</h2>
+        <div class="project-modal-tags">
+          <span class="project-tag">Product</span>
+          <span class="project-tag">Impact Business</span>
+          <span class="project-tag">Feature</span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <!-- Description Section -->
+        <div class="project-section">
+          <h3>Description</h3>
+          <p>Designed and built a data enrichment algorithm (emails, phone numbers, LinkedIn URLs, deliverability checks) for lemlist. The feature was created from scratch and sequentially tests multiple data sources in an optimised way to guarantee the best success rate and data quality for users.</p>
+          <p>The project involved:</p>
+          <ul>
+            <li>Technical development and product design of the algorithm</li>
+            <li>Deep analytics tracking with Mixpanel to optimise the user experience</li>
+            <li>Identification and negotiation of strategic partnerships with 15+ data providers</li>
+          </ul>
+          <p><a href="https://www.lemlist.com/fr/blog/waterfall-lead-enrichment" target="_blank" rel="noopener noreferrer" class="project-link">Learn more <img src="../images/various/openlink.svg" alt="" class="link-icon"></a></p>
+        </div>
+
+        <!-- Screenshots placeholder -->
+        <div class="project-screenshots">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="../images/projectspage/enrich/1.png" alt="Screenshot enrichissement waterfall" class="project-screenshot">
+            </div>
+            <div class="col-md-6">
+              <img src="../images/projectspage/enrich/2.png" alt="Screenshot enrichissement waterfall" class="project-screenshot">
+            </div>
+          </div>
+        </div>
+
+        <!-- Impact Section -->
+        <div class="project-section">
+          <h3>Impact / key numbers</h3>
+          <div class="impact-metrics">
+            <div class="impact-item">
+              <div class="impact-number">20K+</div>
+              <div class="impact-label">Monthly Active Users</div>
+              <p>Growth from 0 to 20,000 monthly active users.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">$1M+</div>
+              <div class="impact-label">Annual revenue</div>
+              <p>Over $1M in annual revenue (profitable feature).</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">8</div>
+              <div class="impact-label">Iterations</div>
+              <p>Continuous improvement over 8 iteration cycles.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">15+</div>
+              <div class="impact-label">Providers</div>
+              <p>Partnerships with 15+ data providers.</p>
+            </div>
+            <div class="impact-item">
+              <div class="impact-number">Positioning</div>
+              <div class="impact-label">Early mover</div>
+              <p>Helped position lemlist as an early mover on “waterfall” enrichment.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
