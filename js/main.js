@@ -47,9 +47,13 @@ $(document).ready(function () {
 	});
 
 	//*********** Animated headline js
-
+	// Typewriter-style effect (letter by letter), faster than defaults
 	$('.animate-scale').animatedHeadline({
-		animationType: 'clip'
+		animationType: 'type',
+		animationDelay: 1800,
+		typeLettersDelay: 35,
+		selectionDuration: 120,
+		typeAnimationDelay: 800
 	});
 
 	//***** Skill bar js

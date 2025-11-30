@@ -781,7 +781,7 @@ canvas{
             rgba(255,255,255,0.4) 35%,
             rgba(255,255,255,0.8) 65%,
             rgba(255,255,255,1) 100%),
-        radial-gradient(circle, rgba(255, 124, 61, 0.22) 2px, transparent 2px);
+        radial-gradient(circle, rgba(30, 28, 26, 0.22) 2px, transparent 2px);
     background-repeat: no-repeat, repeat;
     background-size: 100% 130%, 30px 30px;
     background-position: 0 100%, 0 0;
@@ -797,7 +797,7 @@ canvas{
             rgba(255,255,255,0.9) 40%,
             rgba(255,255,255,0.5) 65%,
             rgba(255,255,255,0) 90%),
-        radial-gradient(circle, rgba(255, 124, 61, 0.22) 2px, transparent 2px);
+        radial-gradient(circle, rgba(30, 28, 26, 0.22) 2px, transparent 2px);
     background-repeat: no-repeat, repeat;
     background-size: 120% 120%, 30px 30px;
     background-position: 0 0, 0 0;
@@ -813,7 +813,7 @@ canvas{
             rgba(255,255,255,0.9) 40%,
             rgba(255,255,255,0.5) 65%,
             rgba(255,255,255,0) 90%),
-        radial-gradient(circle, rgba(255, 124, 61, 0.22) 2px, transparent 2px);
+        radial-gradient(circle, rgba(30, 28, 26, 0.22) 2px, transparent 2px);
     background-repeat: no-repeat, repeat;
     background-size: 120% 120%, 30px 30px;
     background-position: 0 0, 0 0;
@@ -830,7 +830,7 @@ canvas{
     font-weight: 700;
     padding: 12px 24px;
     line-height: 1.2;
-    border-radius: 8px;
+    border-radius: 999px;
 }
 
 /* Variantes CTA vidéo desktop / mobile */
@@ -855,10 +855,11 @@ canvas{
 }
 
 .video-cta-btn:hover {
-    background: #E65A1A;
-    border-color: #E65A1A;
+    background: var(--main_color);
+    border-color: var(--main_color);
     color: #fff;
     text-decoration: none;
+    filter: brightness(1.08);
 }
 
 .video-col {
@@ -2159,7 +2160,7 @@ ul.port-nav-list li a.active {
     font-weight: 600;
     padding: 12px 24px;
     line-height: 1.2;
-    border-radius: 8px;
+    border-radius: 999px;
 }
 
 .pricing-cta-btn br {
@@ -2175,10 +2176,11 @@ ul.port-nav-list li a.active {
 }
 
 .pricing-cta-btn:hover {
-    background: #E65A1A;
-    border-color: #E65A1A;
+    background: var(--main_color);
+    border-color: var(--main_color);
     color: #fff;
     text-decoration: none;
+    filter: brightness(1.08);
 }
 
 @media (max-width: 767px) {

@@ -9,13 +9,13 @@
     <!--meta tags-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="François Lejeune - Open application for folk (ex-first PM at lemlist, B2B SaaS Product Manager).">
+    <meta name="description" content="François Lejeune x Twin – Product & automation profile tailored to Twin’s agent platform.">
     <meta name="keywords" content="mourithemes, onepage, developer, resume, cv, personal, portfolio, personal resume, clean, modern">
     <meta name="author" content="MouriTheme">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Template name-->
-    <title>François Lejeune - folk application</title>
+    <title>François Lejeune - Twin profile</title>
 
     <!--Favicon – desktop + mobile uniquement-->
     <!-- Icône principale (SVG moderne) -->
@@ -54,266 +54,6 @@
     <!--Responsive css-->
     <link rel="stylesheet" href="../css/responsive.css">
 
-    <!-- Folk-specific styles -->
-    <style>
-      /* Override main accent color to black only on folk page */
-      body.folk-page {
-        --main_color: #000000;
-        --second_color: #000000;
-      }
-
-      /* Softer, more rounded CTAs on folk page */
-      body.folk-page .btn-a,
-      body.folk-page .video-cta-btn,
-      body.folk-page .pricing-cta-btn {
-        border-radius: 999px;
-        padding-left: 28px;
-        padding-right: 28px;
-      }
-
-      /* Pseudo-handwritten style for "folk team" without importing new fonts */
-      .folk-hand {
-        font-family: "Brush Script MT", "Comic Sans MS", "Segoe Script", cursive;
-        font-weight: 10;
-        letter-spacing: 0.04em;
-        font-size: 1.5em;
-      }
-
-      /* Black title & subtitle for Product accomplishments section */
-      #portfolio .section-title h2,
-      #portfolio .section-title .section-subtitle {
-        color: #000000;
-      }
-
-      /* Black titles for Experience and Testimonials sections */
-      #testimonial .section-title h2,
-      #resume .section-title h2 {
-        color: #000000;
-      }
-
-      /* Folk-specific pricing card style inspired by folk pricing */
-      body.folk-page .pricing-card {
-        border: 0.8px solid #000000;
-        border-radius: 0;
-        box-shadow: none;
-        padding: 32px;
-      }
-
-      body.folk-page .pricing-header {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        margin-bottom: 24px;
-      }
-
-      body.folk-page .pricing-icon {
-        display: inline-block;
-        width: 18px;
-        height: 18px;
-        margin-right: 8px;
-        vertical-align: middle;
-      }
-
-      body.folk-page .pricing-header h3 {
-        font-size: 20px;
-        font-weight: 600;
-        margin: 0;
-        color: #000000;
-      }
-
-      body.folk-page .pricing-badge {
-        position: absolute;
-        top: 24px;
-        right: 24px;
-        padding: 6px 16px;
-        border-radius: 999px;
-        background: #ececec;
-        color: #111111;
-        font-size: 12px;
-        font-weight: 400; /* lighter */
-        letter-spacing: 0.03em;
-        text-transform: lowercase;
-      }
-
-      body.folk-page .pricing-cta-btn {
-        background: #000000;
-        border-color: #000000;
-        color: #ffffff;
-        width: 100%;
-        padding: 10px 24px;
-        font-size: 15px;
-        font-weight: 400;
-      }
-
-      /* CTA text slightly smaller + hover inversion (outline style) */
-      body.folk-page .video-cta-btn,
-      body.folk-page .pricing-cta-btn {
-        font-size: 15px;
-        font-weight: 400;
-      }
-
-      body.folk-page .video-cta-btn:hover,
-      body.folk-page .pricing-cta-btn:hover {
-        background: transparent;
-        color: #000000;
-        border-color: #000000;
-      }
-      /* Custom banner background for folk page */
-      .folk-banner {
-        background-image: url('../images/various/folkbg.webp');
-        background-size: cover;
-        background-position: center;
-      }
-
-      /* Mobile-specific layout tweaks for folk page */
-      @media (max-width: 767px) {
-        .folk-banner {
-          background-image: url('../images/various/folkbg-mobile.webp');
-          background-size: cover;
-          background-position: center top;
-        }
-
-        /* Left-aligned text blocks on mobile */
-        body.folk-page .video-text-content,
-        body.folk-page #portfolio .section-title,
-        body.folk-page #pricing .section-title,
-        body.folk-page #resume .section-title,
-        body.folk-page #testimonial .section-title {
-          text-align: left;
-          padding-left: 15px;
-          padding-right: 15px;
-        }
-
-        /* Left-align the blurred price line on mobile */
-        body.folk-page #pricing .pricing-salary {
-          text-align: left;
-          padding-left: 15px;
-          padding-right: 15px;
-        }
-
-        /* Smaller pricing title to avoid overlap with badge */
-        body.folk-page .pricing-header h3 {
-          font-size: 16px;
-          margin-right: 100px;
-        }
-      }
-
-      /* Ensure all pricing text is black on folk page */
-      body.folk-page #pricing,
-      body.folk-page #pricing p,
-      body.folk-page #pricing li,
-      body.folk-page #pricing h3,
-      body.folk-page #pricing h4,
-      body.folk-page #pricing .pricing-salary-amount,
-      body.folk-page #pricing .pricing-salary-unit,
-      body.folk-page #pricing .pricing-salary-link {
-        color: #000000;
-      }
-
-      /* Slight hierarchy tweaks: bigger price, smaller "Included" */
-      body.folk-page .pricing-salary-amount,
-      body.folk-page .pricing-salary-unit {
-        font-size: 24px;
-      }
-
-      body.folk-page .pricing-salary-prefix {
-        font-size: 24px;
-        margin-right: 4px;
-      }
-
-      body.folk-page .pricing-features {
-        margin-top: 18px; /* padding above "Included" */
-      }
-
-      body.folk-page .pricing-features h4 {
-        font-size: 15px;
-        font-weight: 600; /* more bold for "Included" */
-        margin-bottom: 10px;
-      }
-
-      body.folk-page .pricing-features ul li {
-        font-size: 14px;
-        font-weight: 400; /* lighter items */
-        line-height: 1.5;
-      }
-
-      /* Override dotted backgrounds: keep same layout & opacity, only change base color to black */
-      #about,
-      #resume,
-      #pricing {
-        background-image:
-          linear-gradient(135deg,
-            rgba(255,255,255,1) 0%,
-            rgba(255,255,255,0.9) 40%,
-            rgba(255,255,255,0.5) 65%,
-            rgba(255,255,255,0) 90%),
-          radial-gradient(circle, rgba(0, 0, 0, 0.22) 2px, transparent 2px);
-      }
-
-      /* Thin separator line under the video/about section */
-      body.folk-page #about {
-        border-bottom: 1px solid #000000;
-      }
-
-      /* Thin black line above Experience and below Testimonials to avoid double borders */
-      body.folk-page #resume {
-        border-top: 1px solid #000000;
-      }
-
-      body.folk-page #testimonial {
-        border-top: 1px solid #000000;
-        border-bottom: 1px solid #000000;
-      }
-
-      /* Folk-specific background image for Projects and Testimonials sections */
-      #portfolio,
-      #testimonial {
-        background-image: url('../images/various/folkbg2.png');
-        background-size: cover;
-        background-position: center;
-        background-color: transparent;
-      }
-
-      /* Remove dark overlay on these sections only */
-      #portfolio.skills-area::before,
-      #testimonial.testimonial-area::before {
-        background: transparent;
-      }
-
-      /* Experience items framed for folk page */
-      #resume .resume-item.expr {
-        border: 1px solid #000000;
-        border-radius: 0;
-        padding: 25px;
-        margin-bottom: 25px;
-        background: rgba(255,255,255,0.9);
-      }
-
-      /* Project cards framed for folk page (no radius, black border) */
-      body.folk-page #portfolio .project-card,
-      body.folk-page #portfolio .project-item {
-        border: 0.5px solid #000000;
-        border-radius: 0;
-        box-shadow: none;
-      }
-
-      /* Testimonials framed for folk page (no radius, black border) */
-      body.folk-page #testimonial .single-testimonial {
-        border: 1px solid #000000;
-        border-radius: 0;
-        box-shadow: none;
-      }
-
-      /* Video frame for folk page: no radius, black border */
-      body.folk-page .video-wrapper,
-      body.folk-page .video-player {
-        border-radius: 0;
-        border: 1px solid #000000;
-        box-shadow: none;
-        transform: none;
-      }
-    </style>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V76ZXWF3JG"></script>
     <script>
@@ -323,8 +63,528 @@
 
       gtag('config', 'G-V76ZXWF3JG');
     </script>
+    <style>
+      /* Twin global text color & main color override */
+      body.twin-page {
+        color: rgb(30, 28, 26);
+        --main_color: #1E1C1A;   /* BLACKMAIN */
+        --second_color: #1E1C1A;
+      }
+
+      /* Color tokens for Twin
+         BLACKMAIN: #1E1C1A
+         GRISBG:    #F8F6F4
+         GRISMAIN:  #737373
+      */
+
+      /* Twin navbar styling */
+      body.twin-page .nav.navbar-nav > li > a {
+        text-transform: capitalize;
+        color: #1E1C1A; /* BLACKMAIN */
+        padding: 18px 18px;
+        border-radius: 999px;
+        transition: background 0.2s ease, color 0.2s ease;
+        font-weight: 500;
+      }
+
+      body.twin-page .nav.navbar-nav > li > a:hover {
+        background: #F8F6F4; /* GRISBG */
+        color: #1E1C1A;      /* BLACKMAIN */
+        text-decoration: none;
+      }
+
+      /* Twin-specific hero tweaks */
+      body.twin-page .banner-area {
+        background-color: #ffffff;
+        background-image: none;
+      }
+
+      body.twin-page .welcome-text h1,
+      body.twin-page .welcome-text .mobile-subtitle {
+        font-family: "Suisse", "SuisseIntl", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: rgb(30, 28, 26);
+      }
+
+      body.twin-page .welcome-text h1 {
+        font-size: 30px;
+        margin-top: 20px;
+        font-weight: 500; /* slightly bolder */
+      }
+
+      /* Remove dark overlay on hero background */
+      body.twin-page .banner-area::before {
+        background: transparent !important;
+      }
+
+      /* Prompt box around animated headline */
+      body.twin-page .ah-headline {
+        margin-top: 20px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        background: #F8F6F4;
+        border-radius: 24px;
+        padding: 18px 24px;
+        height: 150px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      body.twin-page .ah-headline .ah-words-wrapper {
+        display: block;
+        color: #B6B5B4;
+        position: relative;
+        width: 100% !important;
+        height: auto;
+        overflow: hidden;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+
+      /* Clean typewriter effect for Twin: no grey overlay, no caret bar */
+      body.twin-page .ah-headline.type .ah-words-wrapper {
+        background-color: transparent !important;
+      }
+
+      body.twin-page .ah-headline.type .ah-words-wrapper.selected,
+      body.twin-page .ah-headline.type .ah-words-wrapper.waiting {
+        background-color: transparent !important;
+      }
+
+      body.twin-page .ah-headline.type .ah-words-wrapper::after {
+        display: none !important; /* remove black caret bar */
+      }
+
+      body.twin-page .ah-headline.type .ah-words-wrapper.selected b {
+        color: inherit;
+      }
+
+      body.twin-page .ah-headline b {
+        font-weight: 400;
+      }
+
+      /* Mobile hero: ensure prompt box & text are visible */
+      @media (max-width: 767px) {
+        /* Twin mobile nav: white items on dark background */
+        body.twin-page .navbar-nav > li > a {
+          color: #ffffff !important;
+        }
+
+        body.twin-page .ah-headline {
+          max-width: 100%;
+          padding: 14px 16px;
+          height: auto;
+          min-height: 130px;
+          width: 100%;
+        }
+
+        body.twin-page .ah-headline .ah-words-wrapper {
+          font-size: 14px;
+        }
+
+        /* Re‑enable animated headline on mobile for Twin */
+        body.twin-page .welcome-text h1.ah-headline {
+          display: block !important;
+        }
+      }
+
+      body.twin-page .twin-prompt-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 16px;
+        border-radius: 999px;
+        background: #181818;
+        color: #ffffff;
+        font-size: 13px;
+        text-decoration: none;
+        position: absolute;
+        right: 18px;
+        bottom: 14px;
+      }
+
+      body.twin-page .twin-prompt-button img {
+        width: 12px;
+        height: 12px;
+        display: block;
+      }
+
+      body.twin-page .twin-prompt-button:hover,
+      body.twin-page .twin-prompt-button:active,
+      body.twin-page .twin-prompt-button:focus {
+        background: #181818;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      /* Tags under prompt box */
+      body.twin-page .twin-tags {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      body.twin-page .twin-tag {
+        padding: 6px 18px;
+        border-radius: 999px;
+        background: #F8F6F4; /* GRISBG */
+        color: #737373;      /* GRISMAIN */
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      /* Twin video card */
+      body.twin-page #about .container {
+        max-width: 1120px;
+      }
+
+      body.twin-page .twin-video-card {
+        background: #F8F6F4; /* GRISBG */
+        border-radius: 28px;
+        padding: 36px 40px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      body.twin-page .twin-video-card::after {
+        content: '';
+        position: absolute;
+        right: -60px;
+        bottom: -80px;
+        width: 340px;
+        height: 340px;
+        background-image: url('../images/various/bgtwin1.svg');
+        background-repeat: no-repeat;
+        background-size: 130%;
+        opacity: 0.35;
+        pointer-events: none;
+      }
+
+      body.twin-page .twin-video-media {
+        flex: 0 0 30%;
+        max-width: 30%;
+      }
+
+      body.twin-page .twin-video-media .video-wrapper {
+        border-radius: 16px;
+        border: 1px solid #e0e0e0;
+        overflow: hidden;
+        box-shadow: none;
+        transform: none;
+      }
+
+      body.twin-page .twin-video-content {
+        flex: 1;
+        position: relative;
+        z-index: 1;
+      }
+
+      body.twin-page .twin-video-content h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: rgb(30, 28, 26);
+      }
+
+      body.twin-page .twin-video-content p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #737373; /* GRISMAIN */
+        max-width: 560px;
+        margin-bottom: 22px;
+      }
+
+      body.twin-page .twin-video-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 20px;
+        border-radius: 999px;
+        background: #1E1C1A; /* BLACKMAIN */
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      body.twin-page .twin-video-button img {
+        width: 12px;
+        height: 12px;
+        display: block;
+      }
+
+      body.twin-page .twin-video-button:hover,
+      body.twin-page .twin-video-button:active,
+      body.twin-page .twin-video-button:focus {
+        background: #1E1C1A;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      /* Mobile layout for Twin video card */
+      @media (max-width: 767px) {
+        body.twin-page #about .container {
+          max-width: 100%;
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        body.twin-page .twin-video-card {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 18px 16px 22px;
+          gap: 18px;
+        }
+
+        body.twin-page .twin-video-card::after {
+          display: none;
+        }
+
+        body.twin-page .twin-video-media {
+          flex: 0 0 auto;
+          max-width: 100%;
+          width: 100%;
+        }
+
+        body.twin-page .twin-video-media .video-wrapper {
+          width: 100%;
+        }
+
+        body.twin-page .twin-video-content {
+          width: 100%;
+          margin-top: 4px;
+        }
+
+        body.twin-page .twin-video-content h2 {
+          font-size: 20px;
+        }
+
+        body.twin-page .twin-video-content p {
+          font-size: 14px;
+          max-width: 100%;
+        }
+
+        body.twin-page .twin-video-button {
+          font-size: 14px;
+        }
+      }
+
+      /* Accomplishments & testimonials background on Twin */
+      body.twin-page #portfolio {
+        background-color: #ffffff;
+        background-image: none !important;
+      }
+
+      body.twin-page #testimonial {
+        background-color: #1E1C1A;
+        background-image: none;
+      }
+
+      body.twin-page #portfolio .section-title h2,
+      body.twin-page #portfolio .section-title .section-subtitle {
+        color: rgb(30, 28, 26);
+      }
+
+      body.twin-page #testimonial .section-title h2 {
+        color: #ffffff;
+      }
+
+      /* "with them" highlight in testimonials title */
+      body.twin-page #testimonial .section-title h2 span {
+        color: #ffffff;
+      }
+
+      /* Twin project cards */
+      body.twin-page .twin-project-list {
+        margin-top: 24px;
+      }
+
+      body.twin-page .twin-project-card {
+        background: #F8F6F4; /* GRISBG */
+        border-radius: 28px;
+        padding: 24px 32px;
+        max-width: 1120px;
+        margin: 0 auto 24px;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 32px;
+        min-height: 420px;
+      }
+
+      body.twin-page .twin-project-card.reverse {
+        flex-direction: row-reverse;
+      }
+
+      body.twin-page .twin-project-text {
+        flex: 0 0 35%;
+        max-width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 10px 0;
+      }
+
+      body.twin-page .twin-project-text h3 {
+        font-size: 30px;
+        margin-bottom: 8px;
+        color: rgb(30, 28, 26);
+      }
+
+      body.twin-page .twin-project-text .twin-project-company {
+        font-size: 20px;
+        color: #737373; /* GRISMAIN */
+        margin-bottom: 10px;
+      }
+
+      body.twin-page .twin-project-tags .project-tag {
+        background: #ffffff;
+        border-radius: 999px;
+        color: #737373;
+        padding: 4px 10px;
+        font-size: 12px;
+        margin-right: 6px;
+        margin-bottom: 6px;
+        display: inline-block;
+      }
+
+      body.twin-page .twin-project-media {
+        flex: 0 0 65%;
+        max-width: 65%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      body.twin-page .twin-project-media-inner {
+        border-radius: 14px;
+        padding: 14px;
+        background: #FDE0D0; /* default soft color */
+        margin: 5px;
+        flex: 1;
+        overflow: hidden;
+      }
+
+      body.twin-page .twin-project-media--orange .twin-project-media-inner {
+        background: #F06E50;
+      }
+
+      body.twin-page .twin-project-media--yellow .twin-project-media-inner {
+        background: #FFF2BF;
+      }
+
+      body.twin-page .twin-project-media--blue .twin-project-media-inner {
+        background: #E0E7FF;
+      }
+
+      body.twin-page .twin-project-media--green .twin-project-media-inner {
+        background: #E0F5E8;
+      }
+
+      body.twin-page .twin-project-media--pink .twin-project-media-inner {
+        background: #FFE3F0;
+      }
+
+      /* Twin project color pattern (desktop & mobile) */
+      body.twin-page .twin-project-list .twin-project-card:nth-of-type(2) .twin-project-media-inner {
+        background: rgb(40, 100, 220);
+      }
+
+      body.twin-page .twin-project-list .twin-project-card:nth-of-type(3) .twin-project-media-inner,
+      body.twin-page .twin-project-list .twin-project-card:nth-of-type(4) .twin-project-media-inner {
+        background: rgb(140, 160, 120);
+      }
+
+      body.twin-page .twin-project-list .twin-project-card:nth-of-type(5) .twin-project-media-inner {
+        background: rgb(135, 135, 135);
+      }
+
+      body.twin-page .twin-project-list .twin-project-card:nth-of-type(6) .twin-project-media-inner {
+        background: rgb(40, 100, 220);
+      }
+
+      body.twin-page .twin-project-list .twin-project-card:nth-of-type(7) .twin-project-media-inner,
+      body.twin-page .twin-project-list .twin-project-card:nth-of-type(8) .twin-project-media-inner {
+        background: rgb(140, 160, 120);
+      }
+
+      body.twin-page .twin-project-list .twin-project-card:nth-of-type(9) .twin-project-media-inner {
+        background: rgb(135, 135, 135);
+      }
+
+      body.twin-page .twin-project-media-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+      }
+
+      /* Hide project tags on Twin preview cards */
+      body.twin-page .twin-project-tags {
+        display: none;
+      }
+
+      /* Twin testimonials: active dot indicator in orange */
+      body.twin-page #testimonial .owl-dot.active {
+        background-color: #F06E50 !important;
+      }
+
+      body.twin-page .twin-project-icon {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      body.twin-page .twin-project-icon img {
+        width: 35px;
+        height: 35px;
+        display: block;
+      }
+
+      body.twin-page .twin-project-text h3 a {
+        color: rgb(30, 28, 26);
+        text-decoration: none;
+      }
+
+      body.twin-page .twin-project-text h3 a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 767px) {
+        body.twin-page .twin-project-card,
+        body.twin-page .twin-project-card.reverse {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 5px;
+          min-height: auto;
+        }
+
+        body.twin-page .twin-project-text {
+          flex: 0 0 auto;
+          max-width: 100%;
+          width: 100%;
+          margin-bottom: 8px;
+        }
+
+        body.twin-page .twin-project-media {
+          flex: 0 0 auto;
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+
+      /* Remove dark overlays from generic template */
+      body.twin-page #portfolio.skills-area::before,
+      body.twin-page #testimonial.testimonial-area::before {
+        background: transparent;
+      }
+    </style>
 </head>
-<body class="folk-page">
+<body class="twin-page">
 
 <!--Preloader starts-->
 
@@ -376,7 +636,7 @@
 
 <!--Banner area starts-->
 
-<div class="banner-area folk-banner" id="home">
+<div class="banner-area" id="home">
     <!--<div id="particles-js"></div>-->
     <div class="banner-table">
         <div class="banner-table-cell">
@@ -390,21 +650,29 @@
                                     <img src="../images/home/1.png" alt="Portrait"> <!--edit image-->
                                 </div>
 
-                                <h1>Welcome, <span class="folk-hand">folk team</span>!</h1>
+                                <h1>Welcome, Twin team!</h1>
 
                                 <h1 class="ah-headline">
-
                                     <span class="ah-words-wrapper">
-                                        <b class="is-visible">Ex-first PM hire at lemlist</b>
-                                        <b>Founder of Ajunto, a secure B2B SaaS for law firms</b>
-                                        <b>B2B Product Manager obsessed with relationships & CRMs</b>
-                                        <b>Excited about folk’s CRM vision</b>
-                                        <b>Ready to ship features that teams actually adopt</b>
+                                        <b class="is-visible">Ex‑first PM hire at lemlist</b>
+                                        <b>Built automations across sales, ops & back‑office</b>
+                                        <b>Founder of Ajunto, a secure B2B SaaS for lawyers</b>
+                                        <b>Comfortable designing AI‑first products</b>
+                                        <b>Ready to help Twin ship magical agents faster</b>
                                     </span>
+                                    <a href="https://calendly.com/lejeune-francois/recrutement" target="_blank" rel="noopener noreferrer" class="twin-prompt-button">
+                                      <img src="../images/various/playButton.svg" alt="Run">
+                                      Meet
+                                    </a>
                                 </h1>
-                                
-                                <h1 class="mobile-subtitle">Sales tech & B2B SaaS Product Manager</h1>
 
+                                <div class="twin-tags">
+                                  <span class="twin-tag">SaaS</span>
+                                  <span class="twin-tag">AI</span>
+                                  <span class="twin-tag">Product</span>
+                                  <span class="twin-tag">Design</span>
+                                  <span class="twin-tag">Data</span>
+                                </div>
                                 <div class="social-icon">
                                     <ul>
                                         <li><a href="https://www.linkedin.com/in/fran%C3%A7ois-lejeune-9b5529aa/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
@@ -484,85 +752,82 @@
 <!-- Version affichée avec vidéo -->
 <div class="about-area section-padding" id="about">
     <div class="container">
-        <div class="row video-row">
-            <div class="col-sm-12 video-text-col">
-                <div class="video-text-content">
-                    <h2>120 seconds to get to know me.</h2>
-                    <p>I know your time is precious, so here’s my background condensed into a two‑minute video.</p>
-                    <p>This dedicated version of my portfolkio is tailored to my open application at folk, focusing on how my experience at lemlist and Ajunto can help build a CRM that people actually love to use.</p>
-                    <!-- Main CTA (desktop & tablet) -->
-                    <a href="https://calendly.com/lejeune-francois/recrutement" target="_blank" rel="noopener noreferrer" class="btn-a video-cta-btn video-cta-btn-desktop">Book a demo<br><span class="btn-subtitle">(meet me)</span></a>
+        <div class="twin-video-card">
+          <div class="twin-video-media">
+            <div class="video-container">
+              <div class="video-wrapper">
+                <video id="about-video" class="video-player" poster="../images/various/thumbnailvideo.png" preload="metadata" playsinline webkit-playsinline>
+                    <source src="https://mkt-content.s3.fr-par.scw.cloud/compress%20video%20portfolio%201.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+                <div class="video-overlay" id="video-overlay">
+                    <button class="play-button" id="play-video-btn" type="button">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="40" fill="white" fill-opacity="0.85"/>
+                            <path d="M32 24L32 56L56 40L32 24Z" fill="#4285F4"/>
+                        </svg>
+                    </button>
                 </div>
+                <script>
+                (function() {
+                    var video = document.getElementById('about-video');
+                    var playBtn = document.getElementById('play-video-btn');
+                    var overlay = document.getElementById('video-overlay');
+                    var wrapper = document.querySelector('.video-wrapper');
+                    
+                    function playVideo() {
+                        if (overlay) overlay.style.display = 'none';
+                        if (video) {
+                            video.setAttribute('controls', 'controls');
+                            video.play().catch(function(err) {
+                                console.error('Play error:', err);
+                            });
+                        }
+                        if (wrapper) wrapper.classList.add('playing');
+                    }
+                    
+                    if (playBtn) {
+                        playBtn.onclick = function(e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            playVideo();
+                            return false;
+                        };
+                    }
+                    
+                    if (overlay) {
+                        overlay.onclick = function(e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            playVideo();
+                            return false;
+                        };
+                    }
+                    
+                    if (video) {
+                        video.onpause = function() {
+                            if (!video.ended && video.currentTime > 0 && overlay) {
+                                overlay.style.display = 'flex';
+                            }
+                        };
+                        video.onended = function() {
+                            if (overlay) overlay.style.display = 'flex';
+                            video.removeAttribute('controls');
+                        };
+                    }
+                })();
+                </script>
+              </div>
             </div>
-            <div class="col-sm-12 video-col">
-                <div class="video-container">
-                    <div class="video-wrapper">
-                        <video id="about-video" class="video-player" poster="../images/various/thumbnailvideo-BW.png" preload="metadata" playsinline webkit-playsinline>
-                            <source src="https://mkt-content.s3.fr-par.scw.cloud/compress%20video%20portfolio%201.mp4" type="video/mp4">
-                            Votre navigateur ne supporte pas la lecture de vidéos.
-                        </video>
-                        <div class="video-overlay" id="video-overlay">
-                            <button class="play-button" id="play-video-btn" type="button">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="40" cy="40" r="40" fill="white" fill-opacity="0.85"/>
-                                    <path d="M32 24L32 56L56 40L32 24Z" fill="#4285F4"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <script>
-                        (function() {
-                            var video = document.getElementById('about-video');
-                            var playBtn = document.getElementById('play-video-btn');
-                            var overlay = document.getElementById('video-overlay');
-                            var wrapper = document.querySelector('.video-wrapper');
-                            
-                            function playVideo() {
-                                if (overlay) overlay.style.display = 'none';
-                                if (video) {
-                                    video.setAttribute('controls', 'controls');
-                                    video.play().catch(function(err) {
-                                        console.error('Play error:', err);
-                                    });
-                                }
-                                if (wrapper) wrapper.classList.add('playing');
-                            }
-                            
-                            if (playBtn) {
-                                playBtn.onclick = function(e) {
-                                    e.preventDefault();
-                                    e.stopPropagation();
-                                    playVideo();
-                                    return false;
-                                };
-                            }
-                            
-                            if (overlay) {
-                                overlay.onclick = function(e) {
-                                    e.preventDefault();
-                                    e.stopPropagation();
-                                    playVideo();
-                                    return false;
-                                };
-                            }
-                            
-                            if (video) {
-                                video.onpause = function() {
-                                    if (!video.ended && video.currentTime > 0 && overlay) {
-                                        overlay.style.display = 'flex';
-                                    }
-                                };
-                                video.onended = function() {
-                                    if (overlay) overlay.style.display = 'flex';
-                                    video.removeAttribute('controls');
-                                };
-                            }
-                        })();
-                        </script>
-                    </div>
-                </div>
-                <!-- Mobile‑specific CTA (placed under the video) -->
-                <a href="https://calendly.com/lejeune-francois/recrutement" target="_blank" rel="noopener noreferrer" class="btn-a video-cta-btn video-cta-btn-mobile">Book a demo<br><span class="btn-subtitle">(meet me)</span></a>
-            </div>
+          </div>
+          <div class="twin-video-content">
+            <h2>120 seconds to get to know me.</h2>
+            <p>I know your time is precious, so here’s my background condensed into a two‑minute video (French-only video, but I’m fully comfortable working in English.).</p>
+            <a href="https://calendly.com/lejeune-francois/recrutement" target="_blank" rel="noopener noreferrer" class="twin-video-button">
+              Meet
+              <img src="../images/various/playButton.svg" alt="Play">
+            </a>
+          </div>
         </div>
     </div>
 </div>
@@ -756,201 +1021,224 @@
          <p class="section-subtitle">A selection of projects I’ve worked on over the past few years.</p>
       </div>
     </div>
-    </div>
-    <div class="container">
-    <div class="row accomplishments-grid">
-      <!-- Row 1 (Project 7 : Ajunto) -->
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="project-card">
-          <div class="project-item">
+
+    <div class="twin-project-list">
+
+      <!-- Ajunto V1 launch -->
+      <div class="twin-project-card">
+        <div class="twin-project-text">
+          <div class="twin-project-icon">
+            <img src="../images/various/iconeTwin1.png" alt="Twin icon">
+          </div>
+          <h3><a href="#" data-toggle="modal" data-target="#project7Modal">Ajunto V1 launch</a></h3>
+          <p class="twin-project-company">Designed, built and launched the first fully functional version of Ajunto, from initial idea to live product.</p>
+          <div class="twin-project-tags">
+            <span class="project-tag">Product</span>
+            <span class="project-tag">Tech</span>
+            <span class="project-tag">Design</span>
+            <span class="project-tag">GTM</span>
+            <span class="project-tag">Sales Automation</span>
+            <span class="project-tag">Leadership</span>
+          </div>
+        </div>
+        <div class="twin-project-media twin-project-media--orange">
+          <div class="twin-project-media-inner">
             <a href="#" data-toggle="modal" data-target="#project7Modal">
               <img src="../images/projectspage/ajuntoG/1.png" alt="Ajunto V1 launch">
-              <div class="overlay">
-                <div class="overlay-inner">
-                  <h4>Ajunto V1 launch</h4>
-                  <p>Ajunto</p>
-                </div>
-              </div>
             </a>
-            <div class="project-tags">
-              <span class="project-tag">Product</span>
-              <span class="project-tag">Tech</span>
-              <span class="project-tag">Design</span>
-              <span class="project-tag">GTM</span>
-              <span class="project-tag">Sales Automation</span>
-              <span class="project-tag">Leadership</span>
           </div>
-        </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="project-card">
-          <div class="project-item">
-            <a href="#" data-toggle="modal" data-target="#project8Modal">
-              <img src="../images/projectspage/ajuntoDesign/1.png" alt="Ajunto UX & UI design" class="project-image-left">
-              <div class="overlay">
-                <div class="overlay-inner">
-                  <h4>Ajunto UX & UI design</h4>
-                  <p>Ajunto</p>
-                </div>
-              </div>
-            </a>
-            <div class="project-tags">
-              <span class="project-tag">Product</span>
-              <span class="project-tag">UX</span>
-              <span class="project-tag">UI</span>
-              <span class="project-tag">Design System</span>
-              <span class="project-tag">Customer Feedback</span>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="project-card">
-          <div class="project-item">
-            <a href="#" data-toggle="modal" data-target="#project9Modal">
-              <img src="../images/projectspage/ajuntoFeature/1.png" alt="Secure case management & sharing (Ajunto)" class="project-image-left">
-              <div class="overlay">
-                <div class="overlay-inner">
-                  <h4>Secure case management & sharing</h4>
-                  <p>Ajunto</p>
-                </div>
-              </div>
-            </a>
-            <div class="project-tags">
-              <span class="project-tag">Product</span>
-              <span class="project-tag">Tech</span>
-              <span class="project-tag">Security</span>
-              <span class="project-tag">Core Feature</span>
-          </div>
-        </div>
         </div>
       </div>
 
-      <!-- Row 2 (former projects 1, 2, 3) -->
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="project-card">
-          <div class="project-item">
-            <a href="#" data-toggle="modal" data-target="#project1Modal">
-              <img src="../images/projectspage/enrich/2.png" alt="portfolio image" class="project-image-left">
-              <div class="overlay">
-                <div class="overlay-inner">
-                  <h4>Waterfall enrichment algorithm</h4>
-                  <p>lemlist</p>
-      </div>
-    </div>
+      <!-- Ajunto UX & UI design (reversed) -->
+      <div class="twin-project-card reverse">
+        <div class="twin-project-text">
+          <div class="twin-project-icon">
+            <img src="../images/various/iconeTwin1.png" alt="Twin icon">
+          </div>
+          <h3><a href="#" data-toggle="modal" data-target="#project8Modal">Ajunto UX & UI design</a></h3>
+          <p class="twin-project-company">Continuous UX work through several design and ergonomics iterations.</p>
+          <div class="twin-project-tags">
+            <span class="project-tag">Product</span>
+            <span class="project-tag">UX</span>
+            <span class="project-tag">UI</span>
+            <span class="project-tag">Design System</span>
+            <span class="project-tag">Customer Feedback</span>
+          </div>
+        </div>
+        <div class="twin-project-media twin-project-media--yellow">
+          <div class="twin-project-media-inner">
+            <a href="#" data-toggle="modal" data-target="#project8Modal">
+              <img src="../images/projectspage/ajuntoDesign/1.png" alt="Ajunto UX & UI design">
             </a>
-            <div class="project-tags">
-              <span class="project-tag">Product</span>
-              <span class="project-tag">Impact Business</span>
-              <span class="project-tag">Feature</span>
-  </div>
-    </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="project-card">
-          <div class="project-item">
+
+      <!-- Secure case management & sharing -->
+      <div class="twin-project-card">
+        <div class="twin-project-text">
+          <div class="twin-project-icon">
+            <img src="../images/various/iconeTwin1.png" alt="Twin icon">
+          </div>
+          <h3><a href="#" data-toggle="modal" data-target="#project9Modal">Secure case management & sharing</a></h3>
+          <p class="twin-project-company">Designed and implemented Ajunto’s core system: secure case management for documents, dashboards, notifications and secure delivery.</p>
+          <div class="twin-project-tags">
+            <span class="project-tag">Product</span>
+            <span class="project-tag">Tech</span>
+            <span class="project-tag">Security</span>
+            <span class="project-tag">Core Feature</span>
+          </div>
+        </div>
+        <div class="twin-project-media twin-project-media--blue">
+          <div class="twin-project-media-inner">
+            <a href="#" data-toggle="modal" data-target="#project9Modal">
+              <img src="../images/projectspage/ajuntoFeature/1.png" alt="Secure case management & sharing (Ajunto)">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Waterfall enrichment algorithm (reversed) -->
+      <div class="twin-project-card reverse">
+        <div class="twin-project-text">
+          <div class="twin-project-icon">
+            <img src="../images/various/iconeTwin1.png" alt="Twin icon">
+          </div>
+          <h3><a href="#" data-toggle="modal" data-target="#project1Modal">Waterfall enrichment algorithm</a></h3>
+          <p class="twin-project-company">Designed and built a data enrichment algorithm (emails, phone numbers, LinkedIn URLs, deliverability checks) for lemlist.</p>
+          <div class="twin-project-tags">
+            <span class="project-tag">Product</span>
+            <span class="project-tag">Impact Business</span>
+            <span class="project-tag">Feature</span>
+          </div>
+        </div>
+        <div class="twin-project-media twin-project-media--green">
+          <div class="twin-project-media-inner">
+            <a href="#" data-toggle="modal" data-target="#project1Modal">
+              <img src="../images/projectspage/enrich/2.png" alt="Waterfall enrichment algorithm">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leads Database -->
+      <div class="twin-project-card">
+        <div class="twin-project-text">
+          <div class="twin-project-icon">
+            <img src="../images/various/iconeTwin1.png" alt="Twin icon">
+          </div>
+          <h3><a href="#" data-toggle="modal" data-target="#project2Modal">Leads Database</a></h3>
+          <p class="twin-project-company">Built a massive leads database (600M+ profiles) aggregating multiple data providers.</p>
+          <div class="twin-project-tags">
+            <span class="project-tag">Product</span>
+            <span class="project-tag">Data</span>
+            <span class="project-tag">Analytics</span>
+          </div>
+        </div>
+        <div class="twin-project-media twin-project-media--pink">
+          <div class="twin-project-media-inner">
             <a href="#" data-toggle="modal" data-target="#project2Modal">
               <img src="../images/projectspage/peopledb/1.png" alt="Leads Database">
-              <div class="overlay">
-                <div class="overlay-inner">
-                  <h4>Leads Database</h4>
-                  <p>lemlist</p>
-                </div>
-              </div>
             </a>
-            <div class="project-tags">
-              <span class="project-tag">Product</span>
-              <span class="project-tag">Data</span>
-              <span class="project-tag">Analytics</span>
           </div>
         </div>
-        </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="project-card">
-          <div class="project-item">
+
+      <!-- Chrome extension redesign (reversed) -->
+      <div class="twin-project-card reverse">
+        <div class="twin-project-text">
+          <div class="twin-project-icon">
+            <img src="../images/various/iconeTwin1.png" alt="Twin icon">
+          </div>
+          <h3><a href="#" data-toggle="modal" data-target="#project3Modal">Chrome extension redesign</a></h3>
+          <p class="twin-project-company">Full UX/UI redesign of lemlist’s LinkedIn extension.</p>
+          <div class="twin-project-tags">
+            <span class="project-tag">Product</span>
+            <span class="project-tag">Design</span>
+            <span class="project-tag">UX</span>
+            <span class="project-tag">Tech</span>
+          </div>
+        </div>
+        <div class="twin-project-media twin-project-media--orange">
+          <div class="twin-project-media-inner">
             <a href="#" data-toggle="modal" data-target="#project3Modal">
               <img src="../images/projectspage/chromeextension/1.png" alt="Chrome extension redesign">
-              <div class="overlay">
-                <div class="overlay-inner">
-                  <h4>Chrome extension redesign</h4>
-                  <p>lemlist</p>
-                </div>
-              </div>
             </a>
-            <div class="project-tags">
-              <span class="project-tag">Product</span>
-              <span class="project-tag">Design</span>
-              <span class="project-tag">UX</span>
-              <span class="project-tag">Tech</span>
           </div>
         </div>
-        </div>
       </div>
-      <!-- Row 3 (former projects 4, 5, 6) -->
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="project-card">
-          <div class="project-item">
+
+      <!-- Analytics setup -->
+      <div class="twin-project-card">
+        <div class="twin-project-text">
+          <div class="twin-project-icon">
+            <img src="../images/various/iconeTwin1.png" alt="Twin icon">
+          </div>
+          <h3><a href="#" data-toggle="modal" data-target="#project4Modal">Analytics setup</a></h3>
+          <p class="twin-project-company">Complete overhaul of lemlist’s analytics stack with Mixpanel to deliver reliable, relevant event tracking.</p>
+          <div class="twin-project-tags">
+            <span class="project-tag">Product</span>
+            <span class="project-tag">Data</span>
+            <span class="project-tag">Analytics</span>
+          </div>
+        </div>
+        <div class="twin-project-media twin-project-media--yellow">
+          <div class="twin-project-media-inner">
             <a href="#" data-toggle="modal" data-target="#project4Modal">
-              <img src="../images/projectspage/mxp/2.png" alt="Analytics setup" class="project-image-left">
-              <div class="overlay">
-                <div class="overlay-inner">
-                  <h4>Analytics setup</h4>
-                  <p>lemlist</p>
-                </div>
-              </div>
+              <img src="../images/projectspage/mxp/2.png" alt="Analytics setup">
             </a>
-            <div class="project-tags">
-              <span class="project-tag">Product</span>
-              <span class="project-tag">Data</span>
-              <span class="project-tag">Analytics</span>
           </div>
         </div>
-        </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="project-card">
-          <div class="project-item">
+
+      <!-- HubSpot integration redesign (reversed) -->
+      <div class="twin-project-card reverse">
+        <div class="twin-project-text">
+          <div class="twin-project-icon">
+            <img src="../images/various/iconeTwin1.png" alt="Twin icon">
+          </div>
+          <h3><a href="#" data-toggle="modal" data-target="#project5Modal">HubSpot integration redesign</a></h3>
+          <p class="twin-project-company">Full migration of user data and redesign of the “lead” object model to a contact‑based model at lemlist.</p>
+          <div class="twin-project-tags">
+            <span class="project-tag">Product</span>
+            <span class="project-tag">Tech</span>
+            <span class="project-tag">Process</span>
+            <span class="project-tag">Impact Business</span>
+          </div>
+        </div>
+        <div class="twin-project-media twin-project-media--blue">
+          <div class="twin-project-media-inner">
             <a href="#" data-toggle="modal" data-target="#project5Modal">
-              <img src="../images/projectspage/hubspot/1.png" alt="HubSpot integration & lead-based model redesign">
-              <div class="overlay">
-                <div class="overlay-inner">
-                  <h4>HubSpot integration redesign</h4>
-                  <p>lemlist</p>
-                </div>
-              </div>
+              <img src="../images/projectspage/hubspot/1.png" alt="HubSpot integration redesign">
             </a>
-            <div class="project-tags">
-              <span class="project-tag">Product</span>
-              <span class="project-tag">Tech</span>
-              <span class="project-tag">Process</span>
-              <span class="project-tag">Impact Business</span>
           </div>
         </div>
-        </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="project-card">
-          <div class="project-item">
+
+      <!-- Product process: the Betting Table -->
+      <div class="twin-project-card">
+        <div class="twin-project-text">
+          <div class="twin-project-icon">
+            <img src="../images/various/iconeTwin1.png" alt="Twin icon">
+          </div>
+          <h3><a href="#" data-toggle="modal" data-target="#project6Modal">Product process: the Betting Table</a></h3>
+          <p class="twin-project-company">Co‑designed and rolled out a new Product x Tech x C‑level process at lemlist to transform how features are shipped.</p>
+          <div class="twin-project-tags">
+            <span class="project-tag">Product</span>
+            <span class="project-tag">Process</span>
+            <span class="project-tag">Impact Business</span>
+          </div>
+        </div>
+        <div class="twin-project-media twin-project-media--green">
+          <div class="twin-project-media-inner">
             <a href="#" data-toggle="modal" data-target="#project6Modal">
               <img src="../images/projectspage/bettingtable/11.png" alt="Product process: the Betting Table">
-              <div class="overlay">
-                <div class="overlay-inner">
-                  <h4>Product process: the Betting Table</h4>
-                  <p>lemlist</p>
-                </div>
-              </div>
             </a>
-            <div class="project-tags">
-              <span class="project-tag">Product</span>
-              <span class="project-tag">Process</span>
-              <span class="project-tag">Impact Business</span>
           </div>
         </div>
-        </div>
       </div>
+
     </div>
   </div>
 </div>
@@ -1204,47 +1492,38 @@
   <div class="container">
     <div class="row">
       <div class="section-title">
-        <h2>Pricing</h2>
-        <p class="section-subtitle">What I can bring to folk.</p>
+        <h2>What I’m <span>looking for</span></h2>
+        <p class="section-subtitle">How I can help and what type of role I’m after.</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <div class="pricing-card">
-          <div class="pricing-badge">Most popular</div>
-
-          <!-- Title -->
           <div class="pricing-header">
-            <h3>PM premium</h3>
+            <div class="pricing-icon">
+              <img src="../images/various/stars.svg" alt="" style="width: 32px; height: 32px;">
+            </div>
+            <h3>Early-stage PM</h3>
           </div>
-
-          <!-- Description -->
-          <p class="pricing-description">Hands-on Product Manager with B2B SaaS and sales tech experience, focused on user-centric approach.</p>
-
-          <!-- Price (blurred) -->
+          <p class="pricing-description">Open to joining an ambitious tech startup where product has a real, tangible impact.</p>
+          <div class="pricing-features">
+            <h4>Includes:</h4>
+            <ul>
+              <li><img src="../images/various/thickvert.svg" alt="" class="pricing-icon"> Hands‑on product experience: 3+ years as PM, from discovery to delivery.</li>
+              <li><img src="../images/various/thickvert.svg" alt="" class="pricing-icon"> B2B SaaS track record: helped grow lemlist from $10M → $30M ARR.</li>
+              <li><img src="../images/various/thickvert.svg" alt="" class="pricing-icon"> Founder mindset: built and launched Ajunto end‑to‑end.</li>
+              <li><img src="../images/various/thickvert.svg" alt="" class="pricing-icon"> Tech & Design: hands‑on with Next.js, TypeScript, MongoDB, Vercel, UX/UI (figma).</li>
+              <li><img src="../images/various/thickvert.svg" alt="" class="pricing-icon"> AI‑first mindset: comfortable designing agents, prompt flows and AI‑powered workflows that match Twin’s product vision.</li>
+            </ul>
+          </div>
           <p class="pricing-salary">
             <a href="https://calendly.com/lejeune-francois/recrutement" target="_blank" rel="noopener noreferrer" class="pricing-salary-link">
-              <span class="pricing-salary-prefix">from</span>
-              <span class="pricing-salary-amount" style="filter: blur(4px);">00,000</span><span class="pricing-salary-unit">€/year</span>
+              <span class="pricing-salary-amount">00,000</span><span class="pricing-salary-unit">€/year</span>
             </a>
           </p>
-
-          <!-- CTA -->
           <div class="pricing-cta-wrapper">
-            <a href="https://calendly.com/lejeune-francois/recrutement" target="_blank" rel="noopener noreferrer" class="btn-a pricing-cta-btn">Let’s talk<br></a>
-            <img src="../images/various/dispoNOWengblack.svg" alt="Available now" class="dispo-now-badge">
-          </div>
-
-          <!-- Included items -->
-          <div class="pricing-features">
-            <h4>Included:</h4>
-            <ul>
-              <li><img src="../images/various/thicksvgblack.svg" alt="" class="pricing-icon"> Product ownership from discovery to delivery with clear impact tracking.</li>
-              <li><img src="../images/various/thicksvgblack.svg" alt="" class="pricing-icon"> Deep understanding of sales & outbound use cases from 3 years at lemlist.</li>
-              <li><img src="../images/various/thicksvgblack.svg" alt="" class="pricing-icon"> Experience designing data-enrichment and people databases that stay clean and usable.</li>
-              <li><img src="../images/various/thicksvgblack.svg" alt="" class="pricing-icon"> Strong collaboration with engineering, design and GTM to turn complex workflows into simple, collaborative UX.</li>
-              <li><img src="../images/various/thicksvgblack.svg" alt="" class="pricing-icon"> Founder mindset & technical autonomy: built Ajunto end-to-end (product, tech, GTM).</li>
-            </ul>
+            <a href="https://calendly.com/lejeune-francois/recrutement" target="_blank" rel="noopener noreferrer" class="btn-a pricing-cta-btn">Let’s talk<br><span class="btn-subtitle">(book a meeting)</span></a>
+            <img src="../images/various/dispoNOWeng.svg" alt="Available now" class="dispo-now-badge">
           </div>
         </div>
       </div>
