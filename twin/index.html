@@ -167,6 +167,11 @@
 
       /* Mobile hero: ensure prompt box & text are visible */
       @media (max-width: 767px) {
+        /* Twin mobile nav: dark hamburger icon on light header */
+        body.twin-page .navbar-toggle .icon-bar {
+          background: #1E1C1A !important; /* BLACKMAIN */
+        }
+
         /* Twin mobile nav: white items on dark background */
         body.twin-page .navbar-nav > li > a {
           color: #ffffff !important;
@@ -224,7 +229,7 @@
         margin-top: 16px;
         display: flex;
         justify-content: center;
-        gap: 12px;
+        gap: 6px;
       }
 
       body.twin-page .twin-tag {
