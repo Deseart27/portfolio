@@ -537,7 +537,13 @@ canvas{
 }
 
 .ah-headline.clip .ah-words-wrapper::after {
-    background-color: #fff;
+    /* Remove the white flashing bar before word changes */
+    background-color: transparent;
+}
+
+/* Neutralise the grey highlight used during the type animation selection phase */
+.ah-headline.type .ah-words-wrapper.selected {
+    background-color: transparent;
 }
 
 .banner-btn {
